@@ -13,7 +13,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Sell(object):
     def setupUi(self, Sell):
         Sell.setObjectName("Sell")
-        Sell.resize(540, 307)
+        Sell.resize(543, 328)
         self.label = QtWidgets.QLabel(Sell)
         self.label.setGeometry(QtCore.QRect(50, 60, 81, 31))
         self.label.setStyleSheet("font: 14pt \"方正颜宋简体\";")
@@ -21,6 +21,7 @@ class Ui_Sell(object):
         self.ticketnum = QtWidgets.QSpinBox(Sell)
         self.ticketnum.setGeometry(QtCore.QRect(170, 110, 51, 31))
         self.ticketnum.setStyleSheet("font: 14pt \"微软雅黑\";")
+        self.ticketnum.setMinimum(1)
         self.ticketnum.setObjectName("ticketnum")
         self.label_2 = QtWidgets.QLabel(Sell)
         self.label_2.setGeometry(QtCore.QRect(50, 110, 81, 31))
@@ -53,7 +54,7 @@ class Ui_Sell(object):
 
         self.retranslateUi(Sell)
         self.print.clicked.connect(Sell.printticket)
-        self.execbtn.clicked.connect(Sell.exec)
+        self.execbtn.clicked.connect(Sell.exec1)
         QtCore.QMetaObject.connectSlotsByName(Sell)
 
     def retranslateUi(self, Sell):
@@ -71,7 +72,7 @@ class Ui_Sell(object):
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'微软雅黑\'; font-size:14pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">100.0</p></body></html>"))
         self.label_4.setText(_translate("Sell", "元"))
         self.print.setText(_translate("Sell", "打印车票"))
         self.execbtn.setText(_translate("Sell", "退出"))

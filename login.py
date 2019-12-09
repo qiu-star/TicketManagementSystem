@@ -104,10 +104,16 @@ class Sell(QtWidgets.QDialog, Ui_Sell):
         self.conductor = conductor
 
     def printticket(self):
+        print("y")
         self.cur.execute("select * from sellticket(cast("+ str(self.ticketnum.value())
                         +" as smallint), '"+self.trainnum+"', '"+self.date+"', '"+self.aimsname+"',"+ str(self.price)+", '"
                          +self.conductor+"','"+self.credit.toPlainText()+"');")
+        self.conn.commit()
+        self.cur.fetchall()
+        self.close()
 
+    def exec1(self):
+        self.close()
 
 
 if __name__ == '__main__':
