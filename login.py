@@ -132,6 +132,17 @@ class Refund(QtWidgets.QDialog, Ui_Refund):
         self.conn = conn
         self.cur = conn.cursor()
 
+    def searchcredit(self):
+        self.cur.execute("select * from searchcredit('"+self.credit.toPlainText()+"');")
+        tmp = self.cur.fetchall()
+        tmp = set(tmp)
+        for i, item in enumerate(tmp):
+            for j, jtem in enumerate(item):
+                if jtem == None:
+                    break;
+                newitem = QTableWidgetItem(jtem)
+                self.detail.setItem(i, j, newitem)
+
 if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)
     conductorui = Conductor()

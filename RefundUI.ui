@@ -29,7 +29,7 @@
     <string>身份证号：</string>
    </property>
   </widget>
-  <widget class="QTableWidget" name="tableWidget">
+  <widget class="QTableWidget" name="detail">
    <property name="geometry">
     <rect>
      <x>50</x>
@@ -64,7 +64,7 @@
     </property>
    </column>
   </widget>
-  <widget class="QTextEdit" name="textEdit">
+  <widget class="QTextEdit" name="credit">
    <property name="geometry">
     <rect>
      <x>50</x>
@@ -84,7 +84,7 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="search">
    <property name="geometry">
     <rect>
      <x>50</x>
@@ -103,7 +103,7 @@ p, li { white-space: pre-wrap; }
     <string>查询</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QPushButton" name="refundbtn">
    <property name="geometry">
     <rect>
      <x>280</x>
@@ -122,7 +122,7 @@ p, li { white-space: pre-wrap; }
     <string>退订</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_3">
+  <widget class="QPushButton" name="exit">
    <property name="geometry">
     <rect>
      <x>540</x>
@@ -157,7 +157,7 @@ p, li { white-space: pre-wrap; }
     <string>返还钱数：</string>
    </property>
   </widget>
-  <widget class="QTextEdit" name="textEdit_2">
+  <widget class="QTextEdit" name="backmoney">
    <property name="geometry">
     <rect>
      <x>470</x>

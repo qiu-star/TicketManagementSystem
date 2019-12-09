@@ -13,7 +13,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Dialog(object):
     def setupUi(self, Dialog):
         Dialog.setObjectName("Dialog")
-        Dialog.resize(921, 454)
+        Dialog.resize(927, 471)
         Dialog.setStyleSheet("")
         self.label = QtWidgets.QLabel(Dialog)
         self.label.setGeometry(QtCore.QRect(730, 60, 101, 31))
@@ -90,6 +90,7 @@ class Ui_Dialog(object):
         self.retranslateUi(Dialog)
         self.find.clicked.connect(Dialog.searchdetail)
         self.sell.clicked.connect(Dialog.tosell)
+        self.refund.clicked.connect(Dialog.torefund)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
 
     def retranslateUi(self, Dialog):
