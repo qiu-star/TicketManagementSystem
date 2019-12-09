@@ -3,6 +3,7 @@ import sys
 from PyQt5 import QtWidgets, QtGui
 from LoginUI import Ui_Form
 from ConductorUI import Ui_Dialog
+from PyQt5.QtWidgets import  QTableWidgetItem
 
 class Login(QtWidgets.QWidget, Ui_Form):
     def __init__(self, conductorui):
@@ -42,17 +43,24 @@ class Conductor(QtWidgets.QDialog, Ui_Dialog):
         slist = []
         for item in tmp:
             slist.append(item[0])#因为返回的结果是[(a,), (b,)]型的
-
         self.aimstation.addItems(slist)
-        self.conn.commit()
-        self.cur.close()
-        self.conn.close()
 
 
     def searchdetail(self):
-        self.cur.execute("select * from searchdetail()")
+        self.cur.execute("select * from searchdetail( '"+self.aimstation.currentText()
+                         +"', cast("+str(self.month.value())+ " as smallint), cast("+ str(self.date.value()) + " as smallint));")
         tmp = self.cur.fetchall()
-        print(tmp)
+        tmp = set(tmp)
+        self.detail.setRowCount(len(tmp))
+        for i, item in enumerate(tmp):
+            for j, jtem in enumerate(item):
+                if jtem == None:
+                    break;
+                newitem = QTableWidgetItem(jtem)
+                self.detail.setItem(i, j, newitem)
+        # self.cur.close()
+        # self.conn.close()
+
 
 if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)

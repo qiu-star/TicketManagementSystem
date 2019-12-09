@@ -9,8 +9,8 @@ declare
 	rec record;
 begin
 	select s_sid into asid from station where s_sname = sname;
-	for rec in select dt_tid, dt_aimsid, dt_trainnum, dt_departuretime, dt_ticketentrance from departuretime
-				where dt_month = smonth and dt_date = sdate loop
+	for rec in (select dt_tid, dt_aimsid, dt_trainnum, dt_departuretime, dt_ticketentrance from departuretime
+				where dt_month = smonth and dt_date = sdate) loop
 		if asid in (select r_sid from route where r_trainnum = rec.dt_trainnum)
 		then
 			trainnum := rec.dt_trainnum;

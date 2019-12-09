@@ -96,6 +96,7 @@ class Ui_Dialog(object):
         self.label_7.setObjectName("label_7")
 
         self.retranslateUi(Dialog)
+        self.find.clicked.connect(Dialog.searchdetail)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
 
     def retranslateUi(self, Dialog):
