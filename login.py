@@ -58,9 +58,16 @@ class Conductor(QtWidgets.QDialog, Ui_Dialog):
                     break;
                 newitem = QTableWidgetItem(jtem)
                 self.detail.setItem(i, j, newitem)
+        self.detail.verticalHeader().sectionClicked.connect(self.versectionclicked)
         # self.cur.close()
         # self.conn.close()
 
+    def versectionclicked(self, index):
+        #车次
+        trainnum = self.detail.selectedItems()[0].text()
+        self.cur.execute("select dt_cost from departuretime where dt_trainnum = '"+trainnum+"'")
+        tmp = self.cur.fetchall()[0][0]
+        self.price.setText(tmp)
 
 if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)
