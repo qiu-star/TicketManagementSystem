@@ -91,6 +91,11 @@ class Conductor(QtWidgets.QDialog, Ui_Dialog):
         self.refundui.connectDB(self.conn)
         self.refundui.show()
 
+    def exit(self):
+        self.cur.close()
+        self.conn.close()
+        self.close()
+
 
 class Sell(QtWidgets.QDialog, Ui_Sell):
     def __init__(self):
@@ -112,12 +117,11 @@ class Sell(QtWidgets.QDialog, Ui_Sell):
         self.conductor = conductor
 
     def printticket(self):
-        print("y")
         self.cur.execute("select * from sellticket(cast("+ str(self.ticketnum.value())
                         +" as smallint), '"+self.trainnum+"', '"+self.date+"', '"+self.aimsname+"',"+ str(self.price)+", '"
                          +self.conductor+"','"+self.credit.toPlainText()+"');")
-        self.conn.commit()
         self.cur.fetchall()
+        self.conn.commit()
         self.close()
 
     def exec1(self):
@@ -157,7 +161,9 @@ class Refund(QtWidgets.QDialog, Ui_Refund):
 
     def comfirm(self):
         selectrow = self.detail.selectedItems()[0].row()
-
+        self.cur.execute("select refundticket('"+self.tcidlist[selectrow]+"', "+str(self.backmoney.toPlainText())+");")
+        self.cur.fetchall()
+        self.conn.commit()
         self.close()
 
 

@@ -13,7 +13,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Dialog(object):
     def setupUi(self, Dialog):
         Dialog.setObjectName("Dialog")
-        Dialog.resize(927, 471)
+        Dialog.resize(927, 502)
         Dialog.setStyleSheet("")
         self.label = QtWidgets.QLabel(Dialog)
         self.label.setGeometry(QtCore.QRect(730, 60, 101, 31))
@@ -86,11 +86,16 @@ class Ui_Dialog(object):
         self.rest.setGeometry(QtCore.QRect(530, 310, 161, 41))
         self.rest.setStyleSheet("font: 14pt \"微软雅黑\";")
         self.rest.setObjectName("rest")
+        self.exitbtn = QtWidgets.QPushButton(Dialog)
+        self.exitbtn.setGeometry(QtCore.QRect(790, 450, 111, 31))
+        self.exitbtn.setStyleSheet("font: 14pt \"方正颜宋简体\";")
+        self.exitbtn.setObjectName("exitbtn")
 
         self.retranslateUi(Dialog)
         self.find.clicked.connect(Dialog.searchdetail)
         self.sell.clicked.connect(Dialog.tosell)
         self.refund.clicked.connect(Dialog.torefund)
+        self.exitbtn.clicked.connect(Dialog.exit)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
 
     def retranslateUi(self, Dialog):
@@ -114,3 +119,4 @@ class Ui_Dialog(object):
         self.sell.setText(_translate("Dialog", "销售"))
         self.refund.setText(_translate("Dialog", "退票"))
         self.label_7.setText(_translate("Dialog", "日："))
+        self.exitbtn.setText(_translate("Dialog", "退出"))
