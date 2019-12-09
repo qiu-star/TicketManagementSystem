@@ -88,6 +88,11 @@ class Sell(QtWidgets.QDialog, Ui_Sell):
     def __init__(self):
         super(Sell, self).__init__()
         self.setupUi(self)
+        self.ticketnum.valueChanged.connect(self.valuechanged)
+
+    def valuechanged(self):
+        print('c')
+        self.sum = self.ticketnum.value() * self.price
 
     def connectDB(self, conn, trainnum, month, date, aimsname, price, rest, conductor):
         self.conn = conn
