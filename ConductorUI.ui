@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>921</width>
-    <height>454</height>
+    <width>927</width>
+    <height>471</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -291,9 +291,26 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>refund</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>torefund()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>794</x>
+     <y>417</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>727</x>
+     <y>421</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>searchdetail()</slot>
   <slot>tosell()</slot>
+  <slot>torefund()</slot>
  </slots>
 </ui>
