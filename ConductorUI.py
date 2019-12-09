@@ -31,10 +31,6 @@ class Ui_Dialog(object):
         self.label_3.setGeometry(QtCore.QRect(50, 310, 121, 31))
         self.label_3.setStyleSheet("font: 14pt \"方正颜宋简体\";")
         self.label_3.setObjectName("label_3")
-        self.price = QtWidgets.QTextBrowser(Dialog)
-        self.price.setGeometry(QtCore.QRect(160, 310, 161, 41))
-        self.price.setStyleSheet("font: 14pt \"微软雅黑\";")
-        self.price.setObjectName("price")
         self.detail = QtWidgets.QTableWidget(Dialog)
         self.detail.setGeometry(QtCore.QRect(50, 30, 641, 251))
         self.detail.setObjectName("detail")
@@ -54,10 +50,6 @@ class Ui_Dialog(object):
         self.label_5.setGeometry(QtCore.QRect(420, 310, 121, 31))
         self.label_5.setStyleSheet("font: 14pt \"方正颜宋简体\";")
         self.label_5.setObjectName("label_5")
-        self.rest = QtWidgets.QTextBrowser(Dialog)
-        self.rest.setGeometry(QtCore.QRect(530, 310, 161, 41))
-        self.rest.setStyleSheet("font: 14pt \"微软雅黑\";")
-        self.rest.setObjectName("rest")
         self.find = QtWidgets.QPushButton(Dialog)
         self.find.setGeometry(QtCore.QRect(790, 300, 111, 31))
         self.find.setStyleSheet("font: 14pt \"方正颜宋简体\";")
@@ -86,6 +78,14 @@ class Ui_Dialog(object):
         self.label_7.setGeometry(QtCore.QRect(730, 220, 101, 31))
         self.label_7.setStyleSheet("font: 14pt \"方正颜宋简体\";")
         self.label_7.setObjectName("label_7")
+        self.price = QtWidgets.QTextEdit(Dialog)
+        self.price.setGeometry(QtCore.QRect(160, 310, 161, 41))
+        self.price.setStyleSheet("font: 14pt \"微软雅黑\";")
+        self.price.setObjectName("price")
+        self.rest = QtWidgets.QTextEdit(Dialog)
+        self.rest.setGeometry(QtCore.QRect(530, 310, 161, 41))
+        self.rest.setStyleSheet("font: 14pt \"微软雅黑\";")
+        self.rest.setObjectName("rest")
 
         self.retranslateUi(Dialog)
         self.find.clicked.connect(Dialog.searchdetail)
@@ -97,11 +97,6 @@ class Ui_Dialog(object):
         self.label.setText(_translate("Dialog", "目标站："))
         self.label_2.setText(_translate("Dialog", "月："))
         self.label_3.setText(_translate("Dialog", "票    价："))
-        self.price.setHtml(_translate("Dialog", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'微软雅黑\'; font-size:14pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Academy Engraved LET\';\"><br /></p></body></html>"))
         item = self.detail.horizontalHeaderItem(0)
         item.setText(_translate("Dialog", "车次"))
         item = self.detail.horizontalHeaderItem(1)
@@ -113,11 +108,6 @@ class Ui_Dialog(object):
         item = self.detail.horizontalHeaderItem(4)
         item.setText(_translate("Dialog", "检票口"))
         self.label_5.setText(_translate("Dialog", "剩余车票："))
-        self.rest.setHtml(_translate("Dialog", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'微软雅黑\'; font-size:14pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'Academy Engraved LET\';\"><br /></p></body></html>"))
         self.find.setText(_translate("Dialog", "查找"))
         self.sell.setText(_translate("Dialog", "销售"))
         self.print.setText(_translate("Dialog", "打印"))

@@ -67,7 +67,11 @@ class Conductor(QtWidgets.QDialog, Ui_Dialog):
         trainnum = self.detail.selectedItems()[0].text()
         self.cur.execute("select dt_cost from departuretime where dt_trainnum = '"+trainnum+"'")
         tmp = self.cur.fetchall()[0][0]
-        self.price.setText(tmp)
+        self.price.setText(str(tmp))
+        #剩票
+        self.cur.execute("select * from calcRestTicket('"+trainnum+"');")
+        tmp = self.cur.fetchall()[0][0]
+        self.rest.setText(str(tmp))
 
 if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)

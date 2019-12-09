@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>921</width>
-    <height>458</height>
+    <height>454</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -160,7 +160,7 @@
     <string>销售</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="print">
+  <widget class="QPushButton" name="refund">
    <property name="geometry">
     <rect>
      <x>790</x>
@@ -173,7 +173,7 @@
     <string notr="true">font: 14pt &quot;方正颜宋简体&quot;;</string>
    </property>
    <property name="text">
-    <string>打印</string>
+    <string>退票</string>
    </property>
   </widget>
   <widget class="QSpinBox" name="month">
@@ -230,7 +230,7 @@
     <string>日：</string>
    </property>
   </widget>
-  <widget class="QTextEdit" name="textEdit">
+  <widget class="QTextEdit" name="price">
    <property name="geometry">
     <rect>
      <x>160</x>
@@ -239,8 +239,11 @@
      <height>41</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14pt &quot;微软雅黑&quot;;</string>
+   </property>
   </widget>
-  <widget class="QTextEdit" name="textEdit_2">
+  <widget class="QTextEdit" name="rest">
    <property name="geometry">
     <rect>
      <x>530</x>
@@ -248,6 +251,9 @@
      <width>161</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14pt &quot;微软雅黑&quot;;</string>
    </property>
   </widget>
  </widget>
