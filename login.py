@@ -2,18 +2,20 @@ import psycopg2
 import sys
 from PyQt5 import QtWidgets, QtGui
 from LoginUI import Ui_Form
+from ConductorUI import Ui_Dialog
 
 class Login(QtWidgets.QWidget, Ui_Form):
-    def __init__(self):
+    def __init__(self, conductorui):
         super(Login, self).__init__()
         self.setupUi(self)
+        self.conductorui = conductorui
 
     def accept(self):
         if(self.ifconductor.isChecked()):
-            print("con")
             self.conn = psycopg2.connect(database="TicketManagementSystem", user=self.nametext.toPlainText(),
                                          password=self.passwordtext.toPlainText(), host="localhost", port="5432")
-            pass
+            self.conductorui.show()
+            self.close()
         elif(self.ifmanager.isChecked()):
             self.conn = psycopg2.connect(database="TicketManagementSystem", user=self.nametext.toPlainText(),
                                          password=self.passwordtext.toPlainText(), host="localhost", port="5432")
@@ -25,9 +27,14 @@ class Login(QtWidgets.QWidget, Ui_Form):
     def exec(self):
         sys.exit(app.exec())
 
+class Conductor(QtWidgets.QDialog, Ui_Dialog):
+    def __init__(self):
+        super(Conductor, self).__init__()
+        self.setupUi(self)
 
 if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)
-    loginui = Login()
+    conductorui = Conductor()
+    loginui = Login(conductorui)
     loginui.show()
     sys.exit(app.exec())
