@@ -37,10 +37,17 @@ class Conductor(QtWidgets.QDialog, Ui_Dialog):
         self.conn = conn
         self.cur = self.conn.cursor()
 
-        #self.cur.execute("select s_sname from station;")
-        #slist = self.cur.fetchall()
-        #print(slist)
-        #self.aimstation.addItems(['大连', '西安'])
+        self.cur.execute("select s_sname from station;")
+        tmp = self.cur.fetchall()
+        slist = []
+        for item in tmp:
+            slist.append(item[0])#因为返回的结果是[(a,), (b,)]型的
+
+        self.aimstation.addItems(slist)
+        self.conn.commit()
+        self.cur.close()
+        self.conn.close()
+
 
     def searchdetail(self):
         pass
