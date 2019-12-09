@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Dialog</class>
- <widget class="QDialog" name="Dialog">
+ <class>Manager</class>
+ <widget class="QDialog" name="Manager">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -198,5 +198,25 @@
   </widget>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>trainbtn</sender>
+   <signal>clicked()</signal>
+   <receiver>Manager</receiver>
+   <slot>updatetrain()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>101</x>
+     <y>118</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>41</x>
+     <y>123</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>updatetrain()</slot>
+ </slots>
 </ui>

@@ -6,14 +6,18 @@ from ConductorUI import Ui_Dialog
 from SellUI import Ui_Sell
 from PyQt5.QtWidgets import  QTableWidgetItem
 from RefundUI import Ui_Refund
+from ManagerUI import Ui_Manager
+from DispatchUI import Ui_Dispatch
 
 class Login(QtWidgets.QWidget, Ui_Form):
-    def __init__(self, conductorui, sellui, refundui):
+    def __init__(self, conductorui, sellui, refundui, managerui, dispatchui):
         super(Login, self).__init__()
         self.setupUi(self)
         self.conductorui = conductorui
         self.sellui = sellui
         self.refundui = refundui
+        self.managerui = managerui
+        self.dispatchui = dispatchui
 
     def accept(self):
         if(self.ifconductor.isChecked()):
@@ -25,7 +29,9 @@ class Login(QtWidgets.QWidget, Ui_Form):
         elif(self.ifmanager.isChecked()):
             self.conn = psycopg2.connect(database="TicketManagementSystem", user=self.nametext.toPlainText(),
                                          password=self.passwordtext.toPlainText(), host="localhost", port="5432")
-            pass
+            self.managerui.connectDB(self.conn, self.dispatchui)
+            self.managerui.show()
+            self.close()
         else:
             #弹出窗口，说不能不选择角色就登录
             pass
@@ -96,7 +102,6 @@ class Conductor(QtWidgets.QDialog, Ui_Dialog):
         self.conn.close()
         self.close()
 
-
 class Sell(QtWidgets.QDialog, Ui_Sell):
     def __init__(self):
         super(Sell, self).__init__()
@@ -166,13 +171,55 @@ class Refund(QtWidgets.QDialog, Ui_Refund):
         self.conn.commit()
         self.close()
 
+class Manager(QtWidgets.QDialog, Ui_Manager):
+    def __init__(self):
+        super(Manager, self).__init__()
+        self.setupUi(self)
 
+    def connectDB(self, conn, dispatchui):
+        self.conn = conn
+        self.cur = conn.cursor()
+        self.dispatchui = dispatchui
+
+    def updatetrain(self):
+        self,dispatchui.connectDB(self.conn, 0)
+        self.dispatchui.show()
+
+class Dispatch(QtWidgets.QDialog, Ui_Dispatch):
+    def __init__(self):
+        super(Dispatch, self).__init__()
+        self.setupUi(self)
+
+    def connectDB(self, conn, type):
+        self.conn = conn
+        self.cur = conn.cursor()
+
+        if(type == 0):
+            hlist = ['车ID', '车型', '座位数']
+            list = self.cur.execute("select * from train;")
+            self.title.setText('车辆修改')
+
+        self.setdetail(hlist, list);
+
+    def setdetail(self, hlist, list):
+        self.detail.setColumnCount(len(hlist))
+        self.detail.setHorizontalHeaderLabels(hlist)
+        self.detail.setRowCount(len(list))
+        for i, item in enumerate(list):
+            for j, jtem in enumerate(item):
+                if jtem == None:
+                    break
+                newitem = QTableWidgetItem(jtem)
+                self.detail.setItem(i, j, newitem)
 
 if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)
+
     conductorui = Conductor()
     sellui = Sell()
     refundui = Refund()
-    loginui = Login(conductorui, sellui, refundui)
+    managerui = Manager()
+    dispatchui = Dispatch()
+    loginui = Login(conductorui, sellui, refundui, managerui, dispatchui)
     loginui.show()
     sys.exit(app.exec())
