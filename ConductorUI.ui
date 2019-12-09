@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>927</width>
-    <height>471</height>
+    <height>502</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -256,6 +256,22 @@
     <string notr="true">font: 14pt &quot;微软雅黑&quot;;</string>
    </property>
   </widget>
+  <widget class="QPushButton" name="exitbtn">
+   <property name="geometry">
+    <rect>
+     <x>790</x>
+     <y>450</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14pt &quot;方正颜宋简体&quot;;</string>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections>
@@ -307,10 +323,27 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>exitbtn</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>exit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>811</x>
+     <y>464</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>758</x>
+     <y>465</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>searchdetail()</slot>
   <slot>tosell()</slot>
   <slot>torefund()</slot>
+  <slot>exit()</slot>
  </slots>
 </ui>

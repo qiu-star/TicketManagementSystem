@@ -136,16 +136,31 @@ class Refund(QtWidgets.QDialog, Ui_Refund):
         self.cur.execute("select * from searchcredit('"+self.credit.toPlainText()+"');")
         tmp = self.cur.fetchall()
         self.detail.setRowCount(len(tmp))
+        self.tcidlist = []
         for i, item in enumerate(tmp):
+            sumi = len(item)
             for j, jtem in enumerate(item):
+                if(j == sumi - 1):
+                    self.tcidlist.append(jtem)
+                    continue;
                 newitem = QTableWidgetItem(str(jtem))
                 self.detail.setItem(i, j, newitem)
+        self.detail.clicked.connect(self.showrefundmoney)
+
+    def showrefundmoney(self):
+        row = self.detail.selectedItems()[0].row()
+        tmp = float(self.detail.item(row, 3).text())
+        self.backmoney.setText(str(tmp * 0.8))
 
     def exit(self):
         self.close()
 
     def comfirm(self):
-        print(self.detail.selectedItems()[0].text())
+        selectrow = self.detail.selectedItems()[0].row()
+
+        self.close()
+
+
 
 if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)

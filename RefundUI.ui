@@ -122,7 +122,7 @@ p, li { white-space: pre-wrap; }
     <string>退订</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="exit">
+  <widget class="QPushButton" name="exitbtn">
    <property name="geometry">
     <rect>
      <x>540</x>
@@ -229,7 +229,7 @@ p, li { white-space: pre-wrap; }
    </hints>
   </connection>
   <connection>
-   <sender>exit</sender>
+   <sender>exitbtn</sender>
    <signal>clicked()</signal>
    <receiver>Refund</receiver>
    <slot>exit()</slot>

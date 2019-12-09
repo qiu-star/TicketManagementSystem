@@ -47,11 +47,11 @@ class Ui_Refund(object):
         self.refundbtn.setLayoutDirection(QtCore.Qt.RightToLeft)
         self.refundbtn.setStyleSheet("font: 14pt \"方正颜宋简体\";")
         self.refundbtn.setObjectName("refundbtn")
-        self.exit = QtWidgets.QPushButton(Refund)
-        self.exit.setGeometry(QtCore.QRect(540, 490, 121, 41))
-        self.exit.setLayoutDirection(QtCore.Qt.RightToLeft)
-        self.exit.setStyleSheet("font: 14pt \"方正颜宋简体\";")
-        self.exit.setObjectName("exit")
+        self.exitbtn = QtWidgets.QPushButton(Refund)
+        self.exitbtn.setGeometry(QtCore.QRect(540, 490, 121, 41))
+        self.exitbtn.setLayoutDirection(QtCore.Qt.RightToLeft)
+        self.exitbtn.setStyleSheet("font: 14pt \"方正颜宋简体\";")
+        self.exitbtn.setObjectName("exitbtn")
         self.label_2 = QtWidgets.QLabel(Refund)
         self.label_2.setGeometry(QtCore.QRect(470, 380, 121, 31))
         self.label_2.setStyleSheet("font: 14pt \"方正颜宋简体\";")
@@ -67,6 +67,8 @@ class Ui_Refund(object):
 
         self.retranslateUi(Refund)
         self.search.clicked.connect(Refund.searchcredit)
+        self.refundbtn.clicked.connect(Refund.comfirm)
+        self.exitbtn.clicked.connect(Refund.exit)
         QtCore.QMetaObject.connectSlotsByName(Refund)
 
     def retranslateUi(self, Refund):
@@ -90,7 +92,7 @@ class Ui_Refund(object):
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
         self.search.setText(_translate("Refund", "查询"))
         self.refundbtn.setText(_translate("Refund", "退订"))
-        self.exit.setText(_translate("Refund", "退出"))
+        self.exitbtn.setText(_translate("Refund", "退出"))
         self.label_2.setText(_translate("Refund", "返还钱数："))
         self.backmoney.setHtml(_translate("Refund", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
