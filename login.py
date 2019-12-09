@@ -3,6 +3,7 @@ import sys
 from PyQt5 import QtWidgets, QtGui
 from LoginUI import Ui_Form
 from ConductorUI import Ui_Dialog
+from SellUI import Ui_Sell
 from PyQt5.QtWidgets import  QTableWidgetItem
 
 class Login(QtWidgets.QWidget, Ui_Form):
@@ -72,6 +73,14 @@ class Conductor(QtWidgets.QDialog, Ui_Dialog):
         self.cur.execute("select * from calcRestTicket('"+trainnum+"');")
         tmp = self.cur.fetchall()[0][0]
         self.rest.setText(str(tmp))
+
+class Sell(QtWidgets.QDialog, Ui_Sell):
+    def __init__(self, conn):
+        super(Sell, self).__init__()
+        self.setupUi(self)
+        self.conn = conn
+        self.cur = self.conn.cursor()
+        
 
 if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)

@@ -275,8 +275,25 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>sell</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>sell()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>807</x>
+     <y>368</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>730</x>
+     <y>369</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>searchdetail()</slot>
+  <slot>sell()</slot>
  </slots>
 </ui>
