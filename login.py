@@ -50,8 +50,9 @@ class Conductor(QtWidgets.QDialog, Ui_Dialog):
 
 
     def searchdetail(self):
-        pass
-        #cur.execute("select * from searchdetail()")
+        self.cur.execute("select * from searchdetail()")
+        tmp = self.cur.fetchall()
+        print(tmp)
 
 if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)
