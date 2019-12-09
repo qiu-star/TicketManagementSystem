@@ -20,7 +20,7 @@
    <property name="geometry">
     <rect>
      <x>700</x>
-     <y>50</y>
+     <y>110</y>
      <width>101</width>
      <height>31</height>
     </rect>
@@ -36,7 +36,7 @@
    <property name="geometry">
     <rect>
      <x>700</x>
-     <y>90</y>
+     <y>150</y>
      <width>161</width>
      <height>31</height>
     </rect>
@@ -49,7 +49,7 @@
    <property name="geometry">
     <rect>
      <x>700</x>
-     <y>150</y>
+     <y>190</y>
      <width>101</width>
      <height>31</height>
     </rect>
@@ -101,9 +101,9 @@ p, li { white-space: pre-wrap; }
    <property name="geometry">
     <rect>
      <x>50</x>
-     <y>50</y>
+     <y>30</y>
      <width>631</width>
-     <height>231</height>
+     <height>251</height>
     </rect>
    </property>
    <column>
@@ -136,13 +136,23 @@ p, li { white-space: pre-wrap; }
    <property name="geometry">
     <rect>
      <x>700</x>
-     <y>200</y>
+     <y>240</y>
      <width>171</width>
      <height>31</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">font: 14pt &quot;微软雅黑&quot;;</string>
+   </property>
+   <property name="dateTime">
+    <datetime>
+     <hour>0</hour>
+     <minute>0</minute>
+     <second>0</second>
+     <year>2019</year>
+     <month>12</month>
+     <day>9</day>
+    </datetime>
    </property>
   </widget>
   <widget class="QLabel" name="label_4">
@@ -263,6 +273,35 @@ p, li { white-space: pre-wrap; }
    </property>
    <property name="text">
     <string>打印</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="aimstation_2">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>70</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14pt &quot;Academy Engraved LET&quot;;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>30</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14pt &quot;方正颜宋简体&quot;;</string>
+   </property>
+   <property name="text">
+    <string>上车站：</string>
    </property>
   </widget>
  </widget>
