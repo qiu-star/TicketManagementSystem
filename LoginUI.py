@@ -55,6 +55,8 @@ class Ui_Form(object):
         self.cancel.setObjectName("cancel")
 
         self.retranslateUi(Form)
+        self.ok.clicked.connect(Form.accept)
+        self.cancel.clicked.connect(Form.exec)
         QtCore.QMetaObject.connectSlotsByName(Form)
 
     def retranslateUi(self, Form):
