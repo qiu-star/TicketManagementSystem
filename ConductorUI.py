@@ -89,6 +89,7 @@ class Ui_Dialog(object):
 
         self.retranslateUi(Dialog)
         self.find.clicked.connect(Dialog.searchdetail)
+        self.sell.clicked.connect(Dialog.tosell)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
 
     def retranslateUi(self, Dialog):

@@ -164,5 +164,41 @@ p, li { white-space: pre-wrap; }
   </widget>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>print</sender>
+   <signal>clicked()</signal>
+   <receiver>Sell</receiver>
+   <slot>printticket()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>383</x>
+     <y>226</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>333</x>
+     <y>233</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>exec</sender>
+   <signal>clicked()</signal>
+   <receiver>Sell</receiver>
+   <slot>exec()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>414</x>
+     <y>264</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>343</x>
+     <y>264</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>printticket()</slot>
+ </slots>
 </ui>

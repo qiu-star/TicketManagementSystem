@@ -279,7 +279,7 @@
    <sender>sell</sender>
    <signal>clicked()</signal>
    <receiver>Dialog</receiver>
-   <slot>sell()</slot>
+   <slot>tosell()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>807</x>
@@ -294,6 +294,6 @@
  </connections>
  <slots>
   <slot>searchdetail()</slot>
-  <slot>sell()</slot>
+  <slot>tosell()</slot>
  </slots>
 </ui>

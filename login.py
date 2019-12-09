@@ -7,16 +7,17 @@ from SellUI import Ui_Sell
 from PyQt5.QtWidgets import  QTableWidgetItem
 
 class Login(QtWidgets.QWidget, Ui_Form):
-    def __init__(self, conductorui):
+    def __init__(self, conductorui, sellui):
         super(Login, self).__init__()
         self.setupUi(self)
         self.conductorui = conductorui
+        self.sellui = sellui
 
     def accept(self):
         if(self.ifconductor.isChecked()):
             self.conn = psycopg2.connect(database="TicketManagementSystem", user=self.nametext.toPlainText(),
                                          password=self.passwordtext.toPlainText(), host="localhost", port="5432")
-            self.conductorui.connectDB(self.conn)
+            self.conductorui.connectDB(self.conn, self.sellui, self.nametext.toPlainText())
             self.conductorui.show()
             self.close()
         elif(self.ifmanager.isChecked()):
@@ -35,9 +36,11 @@ class Conductor(QtWidgets.QDialog, Ui_Dialog):
         super(Conductor, self).__init__()
         self.setupUi(self)
 
-    def connectDB(self,conn):
+    def connectDB(self,conn, sellui, conductor):
+        self.sellui = sellui
         self.conn = conn
         self.cur = self.conn.cursor()
+        self.conductor = conductor
 
         self.cur.execute("select s_sname from station;")
         tmp = self.cur.fetchall()
@@ -67,24 +70,46 @@ class Conductor(QtWidgets.QDialog, Ui_Dialog):
         #车次
         trainnum = self.detail.selectedItems()[0].text()
         self.cur.execute("select dt_cost from departuretime where dt_trainnum = '"+trainnum+"'")
-        tmp = self.cur.fetchall()[0][0]
-        self.price.setText(str(tmp))
+        self.pricenum = self.cur.fetchall()[0][0]
+        self.price.setText(str(self.pricenum))
         #剩票
         self.cur.execute("select * from calcRestTicket('"+trainnum+"');")
-        tmp = self.cur.fetchall()[0][0]
-        self.rest.setText(str(tmp))
+        self.restnum = self.cur.fetchall()[0][0]
+        self.rest.setText(str(self.restnum))
+
+    def tosell(self):
+        # 车次
+        trainnum = self.detail.selectedItems()[0].text()
+        self.sellui.connectDB(self.conn, trainnum, self.month.value(), self.date.value(),
+                              self.aimstation.currentText(), self.pricenum, self.restnum, self.conductor)
+        self.sellui.show()
 
 class Sell(QtWidgets.QDialog, Ui_Sell):
-    def __init__(self, conn):
+    def __init__(self):
         super(Sell, self).__init__()
         self.setupUi(self)
+
+    def connectDB(self, conn, trainnum, month, date, aimsname, price, rest, conductor):
         self.conn = conn
         self.cur = self.conn.cursor()
-        
+        self.trainnum = trainnum
+        self.date = str('2019-')+str(month)+"-"+str(date)
+        self.aimsname = aimsname
+        self.price = price
+        self.ticketnum.setMaximum(rest)
+        self.conductor = conductor
+
+    def printticket(self):
+        print("select * from sellticket(cast("+ self.ticketnum.value()
+                        +"as smallint), '"+self.trainnum+"', '"+self.date+"', '"+self.aimsname+"',"+ self.price+", '"
+                         +self.conductor+"','"+self.credit.toPlainText()+"');")
+
+
 
 if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)
     conductorui = Conductor()
-    loginui = Login(conductorui)
+    sellui = Sell()
+    loginui = Login(conductorui, sellui)
     loginui.show()
     sys.exit(app.exec())
