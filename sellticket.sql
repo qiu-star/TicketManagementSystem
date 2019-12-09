@@ -15,10 +15,10 @@ begin
 	select c_cid into cid from conductor where c_cname = cname;
 	lock ticket;
 	select count(*) into idcnt from ticket;
-	idcnt = idcnt + 1;
 	while i < num loop
+		idcnt = idcnt + 1 ;
 		select max(tc_seatnum) into seatnum from ticket where tc_trainnum = trainnum;
-		if seatnum = null
+		if seatnum is NULL
 		then 
 			seatnum = 0;
 		end if;

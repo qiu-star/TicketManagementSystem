@@ -146,7 +146,7 @@ p, li { white-space: pre-wrap; }
     <string>打印车票</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="exec">
+  <widget class="QPushButton" name="execbtn">
    <property name="geometry">
     <rect>
      <x>380</x>
@@ -182,7 +182,7 @@ p, li { white-space: pre-wrap; }
    </hints>
   </connection>
   <connection>
-   <sender>exec</sender>
+   <sender>execbtn</sender>
    <signal>clicked()</signal>
    <receiver>Sell</receiver>
    <slot>exec()</slot>

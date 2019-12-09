@@ -91,8 +91,7 @@ class Sell(QtWidgets.QDialog, Ui_Sell):
         self.ticketnum.valueChanged.connect(self.valuechanged)
 
     def valuechanged(self):
-        print('c')
-        self.sum = self.ticketnum.value() * self.price
+        self.sum.setText(str(self.ticketnum.value() * self.price))
 
     def connectDB(self, conn, trainnum, month, date, aimsname, price, rest, conductor):
         self.conn = conn
@@ -105,8 +104,8 @@ class Sell(QtWidgets.QDialog, Ui_Sell):
         self.conductor = conductor
 
     def printticket(self):
-        print("select * from sellticket(cast("+ self.ticketnum.value()
-                        +"as smallint), '"+self.trainnum+"', '"+self.date+"', '"+self.aimsname+"',"+ self.price+", '"
+        self.cur.execute("select * from sellticket(cast("+ str(self.ticketnum.value())
+                        +" as smallint), '"+self.trainnum+"', '"+self.date+"', '"+self.aimsname+"',"+ str(self.price)+", '"
                          +self.conductor+"','"+self.credit.toPlainText()+"');")
 
 

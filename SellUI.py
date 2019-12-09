@@ -46,12 +46,14 @@ class Ui_Sell(object):
         self.print.setGeometry(QtCore.QRect(380, 210, 121, 31))
         self.print.setStyleSheet("font: 14pt \"方正颜宋简体\";")
         self.print.setObjectName("print")
-        self.exec = QtWidgets.QPushButton(Sell)
-        self.exec.setGeometry(QtCore.QRect(380, 250, 121, 31))
-        self.exec.setStyleSheet("font: 14pt \"方正颜宋简体\";")
-        self.exec.setObjectName("exec")
+        self.execbtn = QtWidgets.QPushButton(Sell)
+        self.execbtn.setGeometry(QtCore.QRect(380, 250, 121, 31))
+        self.execbtn.setStyleSheet("font: 14pt \"方正颜宋简体\";")
+        self.execbtn.setObjectName("execbtn")
 
         self.retranslateUi(Sell)
+        self.print.clicked.connect(Sell.printticket)
+        self.execbtn.clicked.connect(Sell.exec)
         QtCore.QMetaObject.connectSlotsByName(Sell)
 
     def retranslateUi(self, Sell):
@@ -72,4 +74,4 @@ class Ui_Sell(object):
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
         self.label_4.setText(_translate("Sell", "元"))
         self.print.setText(_translate("Sell", "打印车票"))
-        self.exec.setText(_translate("Sell", "退出"))
+        self.execbtn.setText(_translate("Sell", "退出"))
