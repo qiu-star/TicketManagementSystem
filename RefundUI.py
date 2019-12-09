@@ -66,6 +66,7 @@ class Ui_Refund(object):
         self.label_3.setObjectName("label_3")
 
         self.retranslateUi(Refund)
+        self.search.clicked.connect(Refund.searchcredit)
         QtCore.QMetaObject.connectSlotsByName(Refund)
 
     def retranslateUi(self, Refund):

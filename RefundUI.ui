@@ -195,5 +195,59 @@ p, li { white-space: pre-wrap; }
   </widget>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>search</sender>
+   <signal>clicked()</signal>
+   <receiver>Refund</receiver>
+   <slot>searchcredit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>148</x>
+     <y>507</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>208</x>
+     <y>512</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>refundbtn</sender>
+   <signal>clicked()</signal>
+   <receiver>Refund</receiver>
+   <slot>comfirm()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>369</x>
+     <y>519</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>458</x>
+     <y>512</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>exit</sender>
+   <signal>clicked()</signal>
+   <receiver>Refund</receiver>
+   <slot>exit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>649</x>
+     <y>506</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>693</x>
+     <y>518</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>searchcredit()</slot>
+  <slot>comfirm()</slot>
+  <slot>exit()</slot>
+ </slots>
 </ui>
