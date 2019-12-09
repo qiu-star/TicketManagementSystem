@@ -67,6 +67,7 @@ class Ui_Manager(object):
         self.label_3.setObjectName("label_3")
 
         self.retranslateUi(Manager)
+        self.trainbtn.clicked.connect(Manager.updatetrain)
         QtCore.QMetaObject.connectSlotsByName(Manager)
 
     def retranslateUi(self, Manager):

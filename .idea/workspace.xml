@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8b2f905-aa2c-4b24-841a-8a352a87aeb6" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/DispatchUI.ui" afterPath="$PROJECT_DIR$/DispatchUI.ui" />
-      <change beforePath="$PROJECT_DIR$/ManagerUI.ui" afterPath="$PROJECT_DIR$/ManagerUI.ui" />
+      <change beforePath="$PROJECT_DIR$/ManagerUI.py" afterPath="$PROJECT_DIR$/ManagerUI.py" />
       <change beforePath="$PROJECT_DIR$/login.py" afterPath="$PROJECT_DIR$/login.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,7 +16,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/TicketManagementSystem$test.coverage" NAME="test Coverage Results" MODIFIED="1575863372655" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/TicketManagementSystem$login.coverage" NAME="login Coverage Results" MODIFIED="1575911856064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TicketManagementSystem$login.coverage" NAME="login Coverage Results" MODIFIED="1575912037396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
@@ -23,9 +24,16 @@
         <entry file="file://$PROJECT_DIR$/login.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="349">
-              <caret line="205" column="52" lean-forward="true" selection-start-line="205" selection-start-column="52" selection-end-line="205" selection-end-column="52" />
+              <caret line="199" column="37" lean-forward="false" selection-start-line="199" selection-start-column="37" selection-end-line="199" selection-end-column="37" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
+                <marker date="1575912035756" expanded="true" signature="2000:2027" ph="select s_sna... station" />
+                <marker date="1575912035756" expanded="true" signature="2262:2449" ph="select * fro... searchdetail" />
+                <marker date="1575912035756" expanded="true" signature="3070:3138" ph="select dt_co... departuretime" />
+                <marker date="1575912035756" expanded="true" signature="3276:3320" ph="select * fro... calcRestTicket" />
+                <marker date="1575912035756" expanded="true" signature="4644:4905" ph="select * fro... sellticket" />
+                <marker date="1575912035756" expanded="true" signature="5308:5367" ph="select * fro... searchcredit" />
+                <marker date="1575912035756" expanded="true" signature="7079:7098" ph="select * fro... train" />
               </folding>
             </state>
           </provider>
@@ -229,6 +237,13 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
+            <marker date="1575912035756" expanded="true" signature="2000:2027" ph="select s_sna... station" />
+            <marker date="1575912035756" expanded="true" signature="2262:2449" ph="select * fro... searchdetail" />
+            <marker date="1575912035756" expanded="true" signature="3070:3138" ph="select dt_co... departuretime" />
+            <marker date="1575912035756" expanded="true" signature="3276:3320" ph="select * fro... calcRestTicket" />
+            <marker date="1575912035756" expanded="true" signature="4644:4905" ph="select * fro... sellticket" />
+            <marker date="1575912035756" expanded="true" signature="5308:5367" ph="select * fro... searchcredit" />
+            <marker date="1575912035756" expanded="true" signature="7079:7098" ph="select * fro... train" />
           </folding>
         </state>
       </provider>
@@ -246,6 +261,13 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
+            <marker date="1575912035756" expanded="true" signature="2000:2027" ph="select s_sna... station" />
+            <marker date="1575912035756" expanded="true" signature="2262:2449" ph="select * fro... searchdetail" />
+            <marker date="1575912035756" expanded="true" signature="3070:3138" ph="select dt_co... departuretime" />
+            <marker date="1575912035756" expanded="true" signature="3276:3320" ph="select * fro... calcRestTicket" />
+            <marker date="1575912035756" expanded="true" signature="4644:4905" ph="select * fro... sellticket" />
+            <marker date="1575912035756" expanded="true" signature="5308:5367" ph="select * fro... searchcredit" />
+            <marker date="1575912035756" expanded="true" signature="7079:7098" ph="select * fro... train" />
           </folding>
         </state>
       </provider>
@@ -256,6 +278,13 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
+            <marker date="1575912035756" expanded="true" signature="2000:2027" ph="select s_sna... station" />
+            <marker date="1575912035756" expanded="true" signature="2262:2449" ph="select * fro... searchdetail" />
+            <marker date="1575912035756" expanded="true" signature="3070:3138" ph="select dt_co... departuretime" />
+            <marker date="1575912035756" expanded="true" signature="3276:3320" ph="select * fro... calcRestTicket" />
+            <marker date="1575912035756" expanded="true" signature="4644:4905" ph="select * fro... sellticket" />
+            <marker date="1575912035756" expanded="true" signature="5308:5367" ph="select * fro... searchcredit" />
+            <marker date="1575912035756" expanded="true" signature="7079:7098" ph="select * fro... train" />
           </folding>
         </state>
       </provider>
@@ -322,9 +351,16 @@
     <entry file="file://$PROJECT_DIR$/login.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="349">
-          <caret line="205" column="52" lean-forward="true" selection-start-line="205" selection-start-column="52" selection-end-line="205" selection-end-column="52" />
+          <caret line="199" column="37" lean-forward="false" selection-start-line="199" selection-start-column="37" selection-end-line="199" selection-end-column="37" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
+            <marker date="1575912035756" expanded="true" signature="2000:2027" ph="select s_sna... station" />
+            <marker date="1575912035756" expanded="true" signature="2262:2449" ph="select * fro... searchdetail" />
+            <marker date="1575912035756" expanded="true" signature="3070:3138" ph="select dt_co... departuretime" />
+            <marker date="1575912035756" expanded="true" signature="3276:3320" ph="select * fro... calcRestTicket" />
+            <marker date="1575912035756" expanded="true" signature="4644:4905" ph="select * fro... sellticket" />
+            <marker date="1575912035756" expanded="true" signature="5308:5367" ph="select * fro... searchcredit" />
+            <marker date="1575912035756" expanded="true" signature="7079:7098" ph="select * fro... train" />
           </folding>
         </state>
       </provider>

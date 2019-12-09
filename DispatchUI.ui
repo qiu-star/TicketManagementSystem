@@ -6,18 +6,21 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>778</width>
-    <height>441</height>
+    <width>820</width>
+    <height>472</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">font: 14pt &quot;方正颜宋简体&quot;;</string>
+  </property>
   <widget class="QTableWidget" name="detail">
    <property name="geometry">
     <rect>
      <x>40</x>
-     <y>100</y>
+     <y>130</y>
      <width>571</width>
      <height>301</height>
     </rect>
@@ -27,7 +30,7 @@
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>60</y>
+     <y>90</y>
      <width>711</width>
      <height>16</height>
     </rect>
@@ -39,11 +42,23 @@
   <widget class="QLabel" name="title">
    <property name="geometry">
     <rect>
-     <x>340</x>
-     <y>20</y>
-     <width>72</width>
-     <height>15</height>
+     <x>320</x>
+     <y>30</y>
+     <width>211</width>
+     <height>41</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>方正颜宋简体</family>
+     <pointsize>20</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 20pt &quot;方正颜宋简体&quot;;</string>
    </property>
    <property name="text">
     <string/>
@@ -53,7 +68,7 @@
    <property name="geometry">
     <rect>
      <x>630</x>
-     <y>260</y>
+     <y>290</y>
      <width>111</width>
      <height>41</height>
     </rect>
@@ -69,7 +84,7 @@
    <property name="geometry">
     <rect>
      <x>630</x>
-     <y>330</y>
+     <y>360</y>
      <width>111</width>
      <height>41</height>
     </rect>

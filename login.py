@@ -196,10 +196,11 @@ class Dispatch(QtWidgets.QDialog, Ui_Dispatch):
 
         if(type == 0):
             hlist = ['车ID', '车型', '座位数']
-            list = self.cur.execute("select * from train;")
+            self.cur.execute("select * from train;")
+            list = self.cur.fetchall()
             self.title.setText('车辆修改')
 
-        self.setdetail(hlist, list);
+        #self.setdetail(hlist, list);
 
     def setdetail(self, hlist, list):
         self.detail.setColumnCount(len(hlist))
