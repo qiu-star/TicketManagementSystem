@@ -264,7 +264,7 @@ class Dispatch(QtWidgets.QDialog, Ui_Dispatch):
 
     def tableadd(self):
         if(self.type == 0):
-            pass
+            print(1)
         elif(self.type == 1):
             pass
         elif(self.type == 2):
