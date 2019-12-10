@@ -74,7 +74,7 @@
     <string notr="true">font: 14pt &quot;方正颜宋简体&quot;;</string>
    </property>
    <property name="text">
-    <string>添加售票员</string>
+    <string>售票员管理</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_5">
@@ -90,7 +90,7 @@
     <string notr="true">font: 14pt &quot;方正颜宋简体&quot;;</string>
    </property>
    <property name="text">
-    <string>密码修改</string>
+    <string>管理员管理</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_6">

@@ -58,6 +58,7 @@ class Ui_Dispatch(object):
         self.acceptbtn.clicked.connect(Dispatch.accept)
         self.cancelbtn.clicked.connect(Dispatch.exit)
         self.addbtn.clicked.connect(Dispatch.tableadd)
+        self.deletebtn.clicked.connect(Dispatch.tabledelete)
         QtCore.QMetaObject.connectSlotsByName(Dispatch)
 
     def retranslateUi(self, Dispatch):
