@@ -215,42 +215,8 @@
     </hint>
    </hints>
   </connection>
-  <connection>
-   <sender>stationbtn</sender>
-   <signal>clicked()</signal>
-   <receiver>Manager</receiver>
-   <slot>updatestation()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>104</x>
-     <y>194</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>40</x>
-     <y>192</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>trainnumbtn</sender>
-   <signal>clicked()</signal>
-   <receiver>Manager</receiver>
-   <slot>updatedeparturetime()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>104</x>
-     <y>290</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>33</x>
-     <y>297</y>
-    </hint>
-   </hints>
-  </connection>
  </connections>
  <slots>
   <slot>updatetrain()</slot>
-  <slot>updatestation()</slot>
-  <slot>updatedeparturetime()</slot>
  </slots>
 </ui>

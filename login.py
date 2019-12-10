@@ -221,7 +221,7 @@ class Dispatch(QtWidgets.QDialog, Ui_Dispatch):
         elif(type == 2):
             hlist = ['车次','车ID', '终点站',  '发车时间', '检票口', '发车月份', '发车日期', '车票价格']
             self.attrs = ['dt_trainnum', 'dt_tid', 'dt_aimsid',  'dt_departuretime', 'dt_ticketentrance', 'dt_month', 'dt_date', 'dt_cost']
-            self.cur.execute("select dt_departuretime, dt_tid, s_sname, dt_trainnum,  dt_ticketentrance, dt_month, dt_date, dt_cost from departuretime,station where dt_aimsid = s_sid;")
+            self.cur.execute("select dt_trainnum,dt_tid, s_sname, dt_departuretime,   dt_ticketentrance, dt_month, dt_date, dt_cost from departuretime,station where dt_aimsid = s_sid;")
             list = self.cur.fetchall()
             self.title.setText('车次修改')
             self.tablename = 'departuretime'
@@ -250,27 +250,29 @@ class Dispatch(QtWidgets.QDialog, Ui_Dispatch):
         selects = self.detail.selectedItems()
         if(len(selects) == 0):
             return
-        row = selects[0].row()
-        c = selects[0].column()
-        before = self.tablelist[row][0]
-        after = selects[0].text()
-        attr = self.attrs[c]
-        self.cur.execute("update "+self.tablename+" set "+attr+" = "
-                         + after +" where "+self.pk+" = '"+before+"';")
+        for s in selects:
+            row = s.row()
+            c = s.column()
+            before = self.tablelist[row][0]
+            after = s.text()
+            if (self.type == 2 and c == 2):
+                self.cur.execute("select s_sid from station where s_sname = '"+after+"'")
+                after = self.cur.fetchall()[0][0]
+            attr = self.attrs[c]
+            self.cur.execute("update "+self.tablename+" set "+attr+" = '"
+                         + after +"' where "+self.pk+" = '"+before+"';")
 
     def tableadd(self):
-        if(type == 2):
+        if(self.type == 0):
+            pass
+        elif(self.type == 1):
+            pass
+        elif(self.type == 2):
             self.cur.execute("INSERT INTO departuretime(dt_tid, dt_aimsid, dt_trainnum, dt_departuretime, dt_ticketentrance, dt_month, dt_date, dt_cost) VALUES (201912091, 10011701, 0, '00:00:00', 0, 0, 0, 0);")
             tmp = ['201912091', '10011701', '00:00:00', 0, 0, 0, 0]
             self.tablelist.append(tmp)
             cnt = self.detail.rowCount()
             self.detail.setRowCount(cnt + 1)
-            print(cnt)
-            # for j, jtem in enumerate(tmp):
-            #     newitem = QTableWidgetItem(str(jtem))
-            #     if ((j == 0) and (self.type != 2)):
-            #         newitem.setFlags(QtCore.Qt.ItemIsEnabled)
-            #     self.detail.setItem(, j, newitem)
 
 
     def accept(self):
