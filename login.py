@@ -204,7 +204,8 @@ class Manager(QtWidgets.QDialog, Ui_Manager):
         self.dispatchui.show()
 
     def showsell(self):
-        pass
+        self.staticsui = Statics(self.conn)
+        self.staticsui.show()
 
 class Dispatch(QtWidgets.QDialog, Ui_Dispatch):
     def __init__(self):
@@ -393,7 +394,7 @@ class Statics(QtWidgets.QDialog, Ui_Statics):
         self.setupUi(self)
         self.conn = conn
         self.cur = conn.cursor()
-        self.cur.execute("select * from c_tc;")
+        self.cur.execute("select * from c_tc order by count desc;")
         tmp = self.cur.fetchall()
         tmp = set(tmp)
         self.detail.setRowCount(len(tmp))
@@ -401,7 +402,8 @@ class Statics(QtWidgets.QDialog, Ui_Statics):
             for j, jtem in enumerate(item):
                 if jtem == None:
                     break;
-                newitem = QTableWidgetItem(jtem)
+                newitem = QTableWidgetItem(str(jtem))
+                newitem.setFlags(QtCore.Qt.ItemIsEnabled)
                 self.detail.setItem(i, j, newitem)
 
 

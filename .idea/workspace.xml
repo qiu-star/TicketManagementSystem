@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8b2f905-aa2c-4b24-841a-8a352a87aeb6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/ManagerUI.py" afterPath="$PROJECT_DIR$/ManagerUI.py" />
-      <change beforePath="$PROJECT_DIR$/StaticsUI.ui" afterPath="$PROJECT_DIR$/StaticsUI.ui" />
+      <change beforePath="$PROJECT_DIR$/StaticsUI.py" afterPath="$PROJECT_DIR$/StaticsUI.py" />
       <change beforePath="$PROJECT_DIR$/login.py" afterPath="$PROJECT_DIR$/login.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,50 +14,50 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/TicketManagementSystem$test.coverage" NAME="test Coverage Results" MODIFIED="1575863372655" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/TicketManagementSystem$login.coverage" NAME="login Coverage Results" MODIFIED="1575968422950" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TicketManagementSystem$login.coverage" NAME="login Coverage Results" MODIFIED="1575969845341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file leaf-file-name="login.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/login.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="402" column="26" lean-forward="true" selection-start-line="402" selection-start-column="26" selection-end-line="402" selection-end-column="26" />
+            <state relative-caret-position="165">
+              <caret line="392" column="39" lean-forward="true" selection-start-line="392" selection-start-column="39" selection-end-line="392" selection-end-column="39" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
                 <element signature="e#4926#6211#0" expanded="false" />
+                <element signature="e#6263#7268#0" expanded="false" />
                 <element signature="e#6390#6439#0" expanded="false" />
                 <element signature="e#6476#6583#0" expanded="false" />
                 <element signature="e#6622#6729#0" expanded="false" />
                 <element signature="e#6774#6881#0" expanded="false" />
                 <element signature="e#6919#7026#0" expanded="false" />
-                <element signature="e#7062#7169#0" expanded="false" />
-                <element signature="e#7203#7207#0" expanded="false" />
-                <element signature="e#7261#15971#0" expanded="false" />
-                <marker date="1575969541011" expanded="true" signature="1787:1814" ph="select s_sna... station" />
-                <marker date="1575969541011" expanded="true" signature="2049:2236" ph="select * fro... searchdetail" />
-                <marker date="1575969541011" expanded="true" signature="2857:2925" ph="select dt_co... departuretime" />
-                <marker date="1575969541011" expanded="true" signature="3063:3107" ph="select * fro... calcRestTicket" />
-                <marker date="1575969541011" expanded="true" signature="4493:4754" ph="select * fro... sellticket" />
-                <marker date="1575969541011" expanded="true" signature="5157:5216" ph="select * fro... searchcredit" />
-                <marker date="1575969541011" expanded="true" signature="7681:7700" ph="select * fro... train" />
-                <marker date="1575969541011" expanded="true" signature="8033:8054" ph="select * fro... station" />
-                <marker date="1575969541011" expanded="true" signature="8480:8632" ph="select dt_tr... departuretime" />
-                <marker date="1575969541011" expanded="true" signature="8951:8974" ph="select * fro... conductor" />
-                <marker date="1575969541011" expanded="true" signature="9284:9305" ph="select * fro... manager" />
-                <marker date="1575969541011" expanded="true" signature="10716:10769" ph="select s_sid... station" />
-                <marker date="1575969541011" expanded="true" signature="11508:11538" ph="select max(s... station" />
-                <marker date="1575969541011" expanded="true" signature="11646:11726" ph="insert into station... " />
-                <marker date="1575969541011" expanded="true" signature="12070:12098" ph="select max(t... train" />
-                <marker date="1575969541011" expanded="true" signature="12198:12256" ph="insert into train... " />
-                <marker date="1575969541011" expanded="true" signature="12600:12778" ph="INSERT INTO departuretime... " />
-                <marker date="1575969541011" expanded="true" signature="13035:13067" ph="select max(c... conductor" />
-                <marker date="1575969541011" expanded="true" signature="13210:13286" ph="insert into conductor... " />
-                <marker date="1575969541011" expanded="true" signature="13320:13396" ph="insert into conductor... " />
-                <marker date="1575969541011" expanded="true" signature="14186:14216" ph="select max(m... manager" />
-                <marker date="1575969541011" expanded="true" signature="14345:14423" ph="insert into manager... " />
-                <marker date="1575969541011" expanded="true" signature="14457:14535" ph="insert into manager... " />
-                <marker date="1575969541011" expanded="true" signature="16200:16218" ph="select * fro... c_tc" />
+                <element signature="e#7322#16032#0" expanded="false" />
+                <marker date="1575969844211" expanded="true" signature="1787:1814" ph="select s_sna... station" />
+                <marker date="1575969844211" expanded="true" signature="2049:2236" ph="select * fro... searchdetail" />
+                <marker date="1575969844211" expanded="true" signature="2857:2925" ph="select dt_co... departuretime" />
+                <marker date="1575969844211" expanded="true" signature="3063:3107" ph="select * fro... calcRestTicket" />
+                <marker date="1575969844211" expanded="true" signature="4493:4754" ph="select * fro... sellticket" />
+                <marker date="1575969844211" expanded="true" signature="5157:5216" ph="select * fro... searchcredit" />
+                <marker date="1575969844211" expanded="true" signature="7742:7761" ph="select * fro... train" />
+                <marker date="1575969844211" expanded="true" signature="8094:8115" ph="select * fro... station" />
+                <marker date="1575969844211" expanded="true" signature="8541:8693" ph="select dt_tr... departuretime" />
+                <marker date="1575969844211" expanded="true" signature="9012:9035" ph="select * fro... conductor" />
+                <marker date="1575969844211" expanded="true" signature="9345:9366" ph="select * fro... manager" />
+                <marker date="1575969844211" expanded="true" signature="10777:10830" ph="select s_sid... station" />
+                <marker date="1575969844211" expanded="true" signature="11569:11599" ph="select max(s... station" />
+                <marker date="1575969844211" expanded="true" signature="11707:11787" ph="insert into station... " />
+                <marker date="1575969844211" expanded="true" signature="12131:12159" ph="select max(t... train" />
+                <marker date="1575969844211" expanded="true" signature="12259:12317" ph="insert into train... " />
+                <marker date="1575969844211" expanded="true" signature="12661:12839" ph="INSERT INTO departuretime... " />
+                <marker date="1575969844211" expanded="true" signature="13096:13128" ph="select max(c... conductor" />
+                <marker date="1575969844211" expanded="true" signature="13271:13347" ph="insert into conductor... " />
+                <marker date="1575969844211" expanded="true" signature="13381:13457" ph="insert into conductor... " />
+                <marker date="1575969844211" expanded="true" signature="14247:14277" ph="select max(m... manager" />
+                <marker date="1575969844211" expanded="true" signature="14406:14484" ph="insert into manager... " />
+                <marker date="1575969844211" expanded="true" signature="14518:14596" ph="insert into manager... " />
+                <marker date="1575969844211" expanded="true" signature="16261:16279" ph="select * fro... c_tc" />
+                <marker date="1575969844211" expanded="true" signature="16261:16299" ph="select * fro... c_tc" />
               </folding>
             </state>
           </provider>
@@ -91,7 +90,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="951" />
     <option name="y" value="-9" />
     <option name="width" value="978" />
@@ -220,7 +219,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -263,38 +262,38 @@
           <folding>
             <element signature="e#0#15#0" expanded="true" />
             <element signature="e#4926#6211#0" expanded="false" />
+            <element signature="e#6263#7268#0" expanded="false" />
             <element signature="e#6390#6439#0" expanded="false" />
             <element signature="e#6476#6583#0" expanded="false" />
             <element signature="e#6622#6729#0" expanded="false" />
             <element signature="e#6774#6881#0" expanded="false" />
             <element signature="e#6919#7026#0" expanded="false" />
-            <element signature="e#7062#7169#0" expanded="false" />
-            <element signature="e#7203#7207#0" expanded="false" />
-            <element signature="e#7261#15971#0" expanded="false" />
-            <marker date="1575969541011" expanded="true" signature="1787:1814" ph="select s_sna... station" />
-            <marker date="1575969541011" expanded="true" signature="2049:2236" ph="select * fro... searchdetail" />
-            <marker date="1575969541011" expanded="true" signature="2857:2925" ph="select dt_co... departuretime" />
-            <marker date="1575969541011" expanded="true" signature="3063:3107" ph="select * fro... calcRestTicket" />
-            <marker date="1575969541011" expanded="true" signature="4493:4754" ph="select * fro... sellticket" />
-            <marker date="1575969541011" expanded="true" signature="5157:5216" ph="select * fro... searchcredit" />
-            <marker date="1575969541011" expanded="true" signature="7681:7700" ph="select * fro... train" />
-            <marker date="1575969541011" expanded="true" signature="8033:8054" ph="select * fro... station" />
-            <marker date="1575969541011" expanded="true" signature="8480:8632" ph="select dt_tr... departuretime" />
-            <marker date="1575969541011" expanded="true" signature="8951:8974" ph="select * fro... conductor" />
-            <marker date="1575969541011" expanded="true" signature="9284:9305" ph="select * fro... manager" />
-            <marker date="1575969541011" expanded="true" signature="10716:10769" ph="select s_sid... station" />
-            <marker date="1575969541011" expanded="true" signature="11508:11538" ph="select max(s... station" />
-            <marker date="1575969541011" expanded="true" signature="11646:11726" ph="insert into station... " />
-            <marker date="1575969541011" expanded="true" signature="12070:12098" ph="select max(t... train" />
-            <marker date="1575969541011" expanded="true" signature="12198:12256" ph="insert into train... " />
-            <marker date="1575969541011" expanded="true" signature="12600:12778" ph="INSERT INTO departuretime... " />
-            <marker date="1575969541011" expanded="true" signature="13035:13067" ph="select max(c... conductor" />
-            <marker date="1575969541011" expanded="true" signature="13210:13286" ph="insert into conductor... " />
-            <marker date="1575969541011" expanded="true" signature="13320:13396" ph="insert into conductor... " />
-            <marker date="1575969541011" expanded="true" signature="14186:14216" ph="select max(m... manager" />
-            <marker date="1575969541011" expanded="true" signature="14345:14423" ph="insert into manager... " />
-            <marker date="1575969541011" expanded="true" signature="14457:14535" ph="insert into manager... " />
-            <marker date="1575969541011" expanded="true" signature="16200:16218" ph="select * fro... c_tc" />
+            <element signature="e#7322#16032#0" expanded="false" />
+            <marker date="1575969844211" expanded="true" signature="1787:1814" ph="select s_sna... station" />
+            <marker date="1575969844211" expanded="true" signature="2049:2236" ph="select * fro... searchdetail" />
+            <marker date="1575969844211" expanded="true" signature="2857:2925" ph="select dt_co... departuretime" />
+            <marker date="1575969844211" expanded="true" signature="3063:3107" ph="select * fro... calcRestTicket" />
+            <marker date="1575969844211" expanded="true" signature="4493:4754" ph="select * fro... sellticket" />
+            <marker date="1575969844211" expanded="true" signature="5157:5216" ph="select * fro... searchcredit" />
+            <marker date="1575969844211" expanded="true" signature="7742:7761" ph="select * fro... train" />
+            <marker date="1575969844211" expanded="true" signature="8094:8115" ph="select * fro... station" />
+            <marker date="1575969844211" expanded="true" signature="8541:8693" ph="select dt_tr... departuretime" />
+            <marker date="1575969844211" expanded="true" signature="9012:9035" ph="select * fro... conductor" />
+            <marker date="1575969844211" expanded="true" signature="9345:9366" ph="select * fro... manager" />
+            <marker date="1575969844211" expanded="true" signature="10777:10830" ph="select s_sid... station" />
+            <marker date="1575969844211" expanded="true" signature="11569:11599" ph="select max(s... station" />
+            <marker date="1575969844211" expanded="true" signature="11707:11787" ph="insert into station... " />
+            <marker date="1575969844211" expanded="true" signature="12131:12159" ph="select max(t... train" />
+            <marker date="1575969844211" expanded="true" signature="12259:12317" ph="insert into train... " />
+            <marker date="1575969844211" expanded="true" signature="12661:12839" ph="INSERT INTO departuretime... " />
+            <marker date="1575969844211" expanded="true" signature="13096:13128" ph="select max(c... conductor" />
+            <marker date="1575969844211" expanded="true" signature="13271:13347" ph="insert into conductor... " />
+            <marker date="1575969844211" expanded="true" signature="13381:13457" ph="insert into conductor... " />
+            <marker date="1575969844211" expanded="true" signature="14247:14277" ph="select max(m... manager" />
+            <marker date="1575969844211" expanded="true" signature="14406:14484" ph="insert into manager... " />
+            <marker date="1575969844211" expanded="true" signature="14518:14596" ph="insert into manager... " />
+            <marker date="1575969844211" expanded="true" signature="16261:16279" ph="select * fro... c_tc" />
+            <marker date="1575969844211" expanded="true" signature="16261:16299" ph="select * fro... c_tc" />
           </folding>
         </state>
       </provider>
@@ -306,38 +305,38 @@
           <folding>
             <element signature="e#0#15#0" expanded="true" />
             <element signature="e#4926#6211#0" expanded="false" />
+            <element signature="e#6263#7268#0" expanded="false" />
             <element signature="e#6390#6439#0" expanded="false" />
             <element signature="e#6476#6583#0" expanded="false" />
             <element signature="e#6622#6729#0" expanded="false" />
             <element signature="e#6774#6881#0" expanded="false" />
             <element signature="e#6919#7026#0" expanded="false" />
-            <element signature="e#7062#7169#0" expanded="false" />
-            <element signature="e#7203#7207#0" expanded="false" />
-            <element signature="e#7261#15971#0" expanded="false" />
-            <marker date="1575969541011" expanded="true" signature="1787:1814" ph="select s_sna... station" />
-            <marker date="1575969541011" expanded="true" signature="2049:2236" ph="select * fro... searchdetail" />
-            <marker date="1575969541011" expanded="true" signature="2857:2925" ph="select dt_co... departuretime" />
-            <marker date="1575969541011" expanded="true" signature="3063:3107" ph="select * fro... calcRestTicket" />
-            <marker date="1575969541011" expanded="true" signature="4493:4754" ph="select * fro... sellticket" />
-            <marker date="1575969541011" expanded="true" signature="5157:5216" ph="select * fro... searchcredit" />
-            <marker date="1575969541011" expanded="true" signature="7681:7700" ph="select * fro... train" />
-            <marker date="1575969541011" expanded="true" signature="8033:8054" ph="select * fro... station" />
-            <marker date="1575969541011" expanded="true" signature="8480:8632" ph="select dt_tr... departuretime" />
-            <marker date="1575969541011" expanded="true" signature="8951:8974" ph="select * fro... conductor" />
-            <marker date="1575969541011" expanded="true" signature="9284:9305" ph="select * fro... manager" />
-            <marker date="1575969541011" expanded="true" signature="10716:10769" ph="select s_sid... station" />
-            <marker date="1575969541011" expanded="true" signature="11508:11538" ph="select max(s... station" />
-            <marker date="1575969541011" expanded="true" signature="11646:11726" ph="insert into station... " />
-            <marker date="1575969541011" expanded="true" signature="12070:12098" ph="select max(t... train" />
-            <marker date="1575969541011" expanded="true" signature="12198:12256" ph="insert into train... " />
-            <marker date="1575969541011" expanded="true" signature="12600:12778" ph="INSERT INTO departuretime... " />
-            <marker date="1575969541011" expanded="true" signature="13035:13067" ph="select max(c... conductor" />
-            <marker date="1575969541011" expanded="true" signature="13210:13286" ph="insert into conductor... " />
-            <marker date="1575969541011" expanded="true" signature="13320:13396" ph="insert into conductor... " />
-            <marker date="1575969541011" expanded="true" signature="14186:14216" ph="select max(m... manager" />
-            <marker date="1575969541011" expanded="true" signature="14345:14423" ph="insert into manager... " />
-            <marker date="1575969541011" expanded="true" signature="14457:14535" ph="insert into manager... " />
-            <marker date="1575969541011" expanded="true" signature="16200:16218" ph="select * fro... c_tc" />
+            <element signature="e#7322#16032#0" expanded="false" />
+            <marker date="1575969844211" expanded="true" signature="1787:1814" ph="select s_sna... station" />
+            <marker date="1575969844211" expanded="true" signature="2049:2236" ph="select * fro... searchdetail" />
+            <marker date="1575969844211" expanded="true" signature="2857:2925" ph="select dt_co... departuretime" />
+            <marker date="1575969844211" expanded="true" signature="3063:3107" ph="select * fro... calcRestTicket" />
+            <marker date="1575969844211" expanded="true" signature="4493:4754" ph="select * fro... sellticket" />
+            <marker date="1575969844211" expanded="true" signature="5157:5216" ph="select * fro... searchcredit" />
+            <marker date="1575969844211" expanded="true" signature="7742:7761" ph="select * fro... train" />
+            <marker date="1575969844211" expanded="true" signature="8094:8115" ph="select * fro... station" />
+            <marker date="1575969844211" expanded="true" signature="8541:8693" ph="select dt_tr... departuretime" />
+            <marker date="1575969844211" expanded="true" signature="9012:9035" ph="select * fro... conductor" />
+            <marker date="1575969844211" expanded="true" signature="9345:9366" ph="select * fro... manager" />
+            <marker date="1575969844211" expanded="true" signature="10777:10830" ph="select s_sid... station" />
+            <marker date="1575969844211" expanded="true" signature="11569:11599" ph="select max(s... station" />
+            <marker date="1575969844211" expanded="true" signature="11707:11787" ph="insert into station... " />
+            <marker date="1575969844211" expanded="true" signature="12131:12159" ph="select max(t... train" />
+            <marker date="1575969844211" expanded="true" signature="12259:12317" ph="insert into train... " />
+            <marker date="1575969844211" expanded="true" signature="12661:12839" ph="INSERT INTO departuretime... " />
+            <marker date="1575969844211" expanded="true" signature="13096:13128" ph="select max(c... conductor" />
+            <marker date="1575969844211" expanded="true" signature="13271:13347" ph="insert into conductor... " />
+            <marker date="1575969844211" expanded="true" signature="13381:13457" ph="insert into conductor... " />
+            <marker date="1575969844211" expanded="true" signature="14247:14277" ph="select max(m... manager" />
+            <marker date="1575969844211" expanded="true" signature="14406:14484" ph="insert into manager... " />
+            <marker date="1575969844211" expanded="true" signature="14518:14596" ph="insert into manager... " />
+            <marker date="1575969844211" expanded="true" signature="16261:16279" ph="select * fro... c_tc" />
+            <marker date="1575969844211" expanded="true" signature="16261:16299" ph="select * fro... c_tc" />
           </folding>
         </state>
       </provider>
@@ -349,38 +348,38 @@
           <folding>
             <element signature="e#0#15#0" expanded="true" />
             <element signature="e#4926#6211#0" expanded="false" />
+            <element signature="e#6263#7268#0" expanded="false" />
             <element signature="e#6390#6439#0" expanded="false" />
             <element signature="e#6476#6583#0" expanded="false" />
             <element signature="e#6622#6729#0" expanded="false" />
             <element signature="e#6774#6881#0" expanded="false" />
             <element signature="e#6919#7026#0" expanded="false" />
-            <element signature="e#7062#7169#0" expanded="false" />
-            <element signature="e#7203#7207#0" expanded="false" />
-            <element signature="e#7261#15971#0" expanded="false" />
-            <marker date="1575969541011" expanded="true" signature="1787:1814" ph="select s_sna... station" />
-            <marker date="1575969541011" expanded="true" signature="2049:2236" ph="select * fro... searchdetail" />
-            <marker date="1575969541011" expanded="true" signature="2857:2925" ph="select dt_co... departuretime" />
-            <marker date="1575969541011" expanded="true" signature="3063:3107" ph="select * fro... calcRestTicket" />
-            <marker date="1575969541011" expanded="true" signature="4493:4754" ph="select * fro... sellticket" />
-            <marker date="1575969541011" expanded="true" signature="5157:5216" ph="select * fro... searchcredit" />
-            <marker date="1575969541011" expanded="true" signature="7681:7700" ph="select * fro... train" />
-            <marker date="1575969541011" expanded="true" signature="8033:8054" ph="select * fro... station" />
-            <marker date="1575969541011" expanded="true" signature="8480:8632" ph="select dt_tr... departuretime" />
-            <marker date="1575969541011" expanded="true" signature="8951:8974" ph="select * fro... conductor" />
-            <marker date="1575969541011" expanded="true" signature="9284:9305" ph="select * fro... manager" />
-            <marker date="1575969541011" expanded="true" signature="10716:10769" ph="select s_sid... station" />
-            <marker date="1575969541011" expanded="true" signature="11508:11538" ph="select max(s... station" />
-            <marker date="1575969541011" expanded="true" signature="11646:11726" ph="insert into station... " />
-            <marker date="1575969541011" expanded="true" signature="12070:12098" ph="select max(t... train" />
-            <marker date="1575969541011" expanded="true" signature="12198:12256" ph="insert into train... " />
-            <marker date="1575969541011" expanded="true" signature="12600:12778" ph="INSERT INTO departuretime... " />
-            <marker date="1575969541011" expanded="true" signature="13035:13067" ph="select max(c... conductor" />
-            <marker date="1575969541011" expanded="true" signature="13210:13286" ph="insert into conductor... " />
-            <marker date="1575969541011" expanded="true" signature="13320:13396" ph="insert into conductor... " />
-            <marker date="1575969541011" expanded="true" signature="14186:14216" ph="select max(m... manager" />
-            <marker date="1575969541011" expanded="true" signature="14345:14423" ph="insert into manager... " />
-            <marker date="1575969541011" expanded="true" signature="14457:14535" ph="insert into manager... " />
-            <marker date="1575969541011" expanded="true" signature="16200:16218" ph="select * fro... c_tc" />
+            <element signature="e#7322#16032#0" expanded="false" />
+            <marker date="1575969844211" expanded="true" signature="1787:1814" ph="select s_sna... station" />
+            <marker date="1575969844211" expanded="true" signature="2049:2236" ph="select * fro... searchdetail" />
+            <marker date="1575969844211" expanded="true" signature="2857:2925" ph="select dt_co... departuretime" />
+            <marker date="1575969844211" expanded="true" signature="3063:3107" ph="select * fro... calcRestTicket" />
+            <marker date="1575969844211" expanded="true" signature="4493:4754" ph="select * fro... sellticket" />
+            <marker date="1575969844211" expanded="true" signature="5157:5216" ph="select * fro... searchcredit" />
+            <marker date="1575969844211" expanded="true" signature="7742:7761" ph="select * fro... train" />
+            <marker date="1575969844211" expanded="true" signature="8094:8115" ph="select * fro... station" />
+            <marker date="1575969844211" expanded="true" signature="8541:8693" ph="select dt_tr... departuretime" />
+            <marker date="1575969844211" expanded="true" signature="9012:9035" ph="select * fro... conductor" />
+            <marker date="1575969844211" expanded="true" signature="9345:9366" ph="select * fro... manager" />
+            <marker date="1575969844211" expanded="true" signature="10777:10830" ph="select s_sid... station" />
+            <marker date="1575969844211" expanded="true" signature="11569:11599" ph="select max(s... station" />
+            <marker date="1575969844211" expanded="true" signature="11707:11787" ph="insert into station... " />
+            <marker date="1575969844211" expanded="true" signature="12131:12159" ph="select max(t... train" />
+            <marker date="1575969844211" expanded="true" signature="12259:12317" ph="insert into train... " />
+            <marker date="1575969844211" expanded="true" signature="12661:12839" ph="INSERT INTO departuretime... " />
+            <marker date="1575969844211" expanded="true" signature="13096:13128" ph="select max(c... conductor" />
+            <marker date="1575969844211" expanded="true" signature="13271:13347" ph="insert into conductor... " />
+            <marker date="1575969844211" expanded="true" signature="13381:13457" ph="insert into conductor... " />
+            <marker date="1575969844211" expanded="true" signature="14247:14277" ph="select max(m... manager" />
+            <marker date="1575969844211" expanded="true" signature="14406:14484" ph="insert into manager... " />
+            <marker date="1575969844211" expanded="true" signature="14518:14596" ph="insert into manager... " />
+            <marker date="1575969844211" expanded="true" signature="16261:16279" ph="select * fro... c_tc" />
+            <marker date="1575969844211" expanded="true" signature="16261:16299" ph="select * fro... c_tc" />
           </folding>
         </state>
       </provider>
@@ -408,38 +407,38 @@
           <folding>
             <element signature="e#0#15#0" expanded="true" />
             <element signature="e#4926#6211#0" expanded="false" />
+            <element signature="e#6263#7268#0" expanded="false" />
             <element signature="e#6390#6439#0" expanded="false" />
             <element signature="e#6476#6583#0" expanded="false" />
             <element signature="e#6622#6729#0" expanded="false" />
             <element signature="e#6774#6881#0" expanded="false" />
             <element signature="e#6919#7026#0" expanded="false" />
-            <element signature="e#7062#7169#0" expanded="false" />
-            <element signature="e#7203#7207#0" expanded="false" />
-            <element signature="e#7261#15971#0" expanded="false" />
-            <marker date="1575969541011" expanded="true" signature="1787:1814" ph="select s_sna... station" />
-            <marker date="1575969541011" expanded="true" signature="2049:2236" ph="select * fro... searchdetail" />
-            <marker date="1575969541011" expanded="true" signature="2857:2925" ph="select dt_co... departuretime" />
-            <marker date="1575969541011" expanded="true" signature="3063:3107" ph="select * fro... calcRestTicket" />
-            <marker date="1575969541011" expanded="true" signature="4493:4754" ph="select * fro... sellticket" />
-            <marker date="1575969541011" expanded="true" signature="5157:5216" ph="select * fro... searchcredit" />
-            <marker date="1575969541011" expanded="true" signature="7681:7700" ph="select * fro... train" />
-            <marker date="1575969541011" expanded="true" signature="8033:8054" ph="select * fro... station" />
-            <marker date="1575969541011" expanded="true" signature="8480:8632" ph="select dt_tr... departuretime" />
-            <marker date="1575969541011" expanded="true" signature="8951:8974" ph="select * fro... conductor" />
-            <marker date="1575969541011" expanded="true" signature="9284:9305" ph="select * fro... manager" />
-            <marker date="1575969541011" expanded="true" signature="10716:10769" ph="select s_sid... station" />
-            <marker date="1575969541011" expanded="true" signature="11508:11538" ph="select max(s... station" />
-            <marker date="1575969541011" expanded="true" signature="11646:11726" ph="insert into station... " />
-            <marker date="1575969541011" expanded="true" signature="12070:12098" ph="select max(t... train" />
-            <marker date="1575969541011" expanded="true" signature="12198:12256" ph="insert into train... " />
-            <marker date="1575969541011" expanded="true" signature="12600:12778" ph="INSERT INTO departuretime... " />
-            <marker date="1575969541011" expanded="true" signature="13035:13067" ph="select max(c... conductor" />
-            <marker date="1575969541011" expanded="true" signature="13210:13286" ph="insert into conductor... " />
-            <marker date="1575969541011" expanded="true" signature="13320:13396" ph="insert into conductor... " />
-            <marker date="1575969541011" expanded="true" signature="14186:14216" ph="select max(m... manager" />
-            <marker date="1575969541011" expanded="true" signature="14345:14423" ph="insert into manager... " />
-            <marker date="1575969541011" expanded="true" signature="14457:14535" ph="insert into manager... " />
-            <marker date="1575969541011" expanded="true" signature="16200:16218" ph="select * fro... c_tc" />
+            <element signature="e#7322#16032#0" expanded="false" />
+            <marker date="1575969844211" expanded="true" signature="1787:1814" ph="select s_sna... station" />
+            <marker date="1575969844211" expanded="true" signature="2049:2236" ph="select * fro... searchdetail" />
+            <marker date="1575969844211" expanded="true" signature="2857:2925" ph="select dt_co... departuretime" />
+            <marker date="1575969844211" expanded="true" signature="3063:3107" ph="select * fro... calcRestTicket" />
+            <marker date="1575969844211" expanded="true" signature="4493:4754" ph="select * fro... sellticket" />
+            <marker date="1575969844211" expanded="true" signature="5157:5216" ph="select * fro... searchcredit" />
+            <marker date="1575969844211" expanded="true" signature="7742:7761" ph="select * fro... train" />
+            <marker date="1575969844211" expanded="true" signature="8094:8115" ph="select * fro... station" />
+            <marker date="1575969844211" expanded="true" signature="8541:8693" ph="select dt_tr... departuretime" />
+            <marker date="1575969844211" expanded="true" signature="9012:9035" ph="select * fro... conductor" />
+            <marker date="1575969844211" expanded="true" signature="9345:9366" ph="select * fro... manager" />
+            <marker date="1575969844211" expanded="true" signature="10777:10830" ph="select s_sid... station" />
+            <marker date="1575969844211" expanded="true" signature="11569:11599" ph="select max(s... station" />
+            <marker date="1575969844211" expanded="true" signature="11707:11787" ph="insert into station... " />
+            <marker date="1575969844211" expanded="true" signature="12131:12159" ph="select max(t... train" />
+            <marker date="1575969844211" expanded="true" signature="12259:12317" ph="insert into train... " />
+            <marker date="1575969844211" expanded="true" signature="12661:12839" ph="INSERT INTO departuretime... " />
+            <marker date="1575969844211" expanded="true" signature="13096:13128" ph="select max(c... conductor" />
+            <marker date="1575969844211" expanded="true" signature="13271:13347" ph="insert into conductor... " />
+            <marker date="1575969844211" expanded="true" signature="13381:13457" ph="insert into conductor... " />
+            <marker date="1575969844211" expanded="true" signature="14247:14277" ph="select max(m... manager" />
+            <marker date="1575969844211" expanded="true" signature="14406:14484" ph="insert into manager... " />
+            <marker date="1575969844211" expanded="true" signature="14518:14596" ph="insert into manager... " />
+            <marker date="1575969844211" expanded="true" signature="16261:16279" ph="select * fro... c_tc" />
+            <marker date="1575969844211" expanded="true" signature="16261:16299" ph="select * fro... c_tc" />
           </folding>
         </state>
       </provider>
@@ -458,38 +457,38 @@
           <folding>
             <element signature="e#0#15#0" expanded="true" />
             <element signature="e#4926#6211#0" expanded="false" />
+            <element signature="e#6263#7268#0" expanded="false" />
             <element signature="e#6390#6439#0" expanded="false" />
             <element signature="e#6476#6583#0" expanded="false" />
             <element signature="e#6622#6729#0" expanded="false" />
             <element signature="e#6774#6881#0" expanded="false" />
             <element signature="e#6919#7026#0" expanded="false" />
-            <element signature="e#7062#7169#0" expanded="false" />
-            <element signature="e#7203#7207#0" expanded="false" />
-            <element signature="e#7261#15971#0" expanded="false" />
-            <marker date="1575969541011" expanded="true" signature="1787:1814" ph="select s_sna... station" />
-            <marker date="1575969541011" expanded="true" signature="2049:2236" ph="select * fro... searchdetail" />
-            <marker date="1575969541011" expanded="true" signature="2857:2925" ph="select dt_co... departuretime" />
-            <marker date="1575969541011" expanded="true" signature="3063:3107" ph="select * fro... calcRestTicket" />
-            <marker date="1575969541011" expanded="true" signature="4493:4754" ph="select * fro... sellticket" />
-            <marker date="1575969541011" expanded="true" signature="5157:5216" ph="select * fro... searchcredit" />
-            <marker date="1575969541011" expanded="true" signature="7681:7700" ph="select * fro... train" />
-            <marker date="1575969541011" expanded="true" signature="8033:8054" ph="select * fro... station" />
-            <marker date="1575969541011" expanded="true" signature="8480:8632" ph="select dt_tr... departuretime" />
-            <marker date="1575969541011" expanded="true" signature="8951:8974" ph="select * fro... conductor" />
-            <marker date="1575969541011" expanded="true" signature="9284:9305" ph="select * fro... manager" />
-            <marker date="1575969541011" expanded="true" signature="10716:10769" ph="select s_sid... station" />
-            <marker date="1575969541011" expanded="true" signature="11508:11538" ph="select max(s... station" />
-            <marker date="1575969541011" expanded="true" signature="11646:11726" ph="insert into station... " />
-            <marker date="1575969541011" expanded="true" signature="12070:12098" ph="select max(t... train" />
-            <marker date="1575969541011" expanded="true" signature="12198:12256" ph="insert into train... " />
-            <marker date="1575969541011" expanded="true" signature="12600:12778" ph="INSERT INTO departuretime... " />
-            <marker date="1575969541011" expanded="true" signature="13035:13067" ph="select max(c... conductor" />
-            <marker date="1575969541011" expanded="true" signature="13210:13286" ph="insert into conductor... " />
-            <marker date="1575969541011" expanded="true" signature="13320:13396" ph="insert into conductor... " />
-            <marker date="1575969541011" expanded="true" signature="14186:14216" ph="select max(m... manager" />
-            <marker date="1575969541011" expanded="true" signature="14345:14423" ph="insert into manager... " />
-            <marker date="1575969541011" expanded="true" signature="14457:14535" ph="insert into manager... " />
-            <marker date="1575969541011" expanded="true" signature="16200:16218" ph="select * fro... c_tc" />
+            <element signature="e#7322#16032#0" expanded="false" />
+            <marker date="1575969844211" expanded="true" signature="1787:1814" ph="select s_sna... station" />
+            <marker date="1575969844211" expanded="true" signature="2049:2236" ph="select * fro... searchdetail" />
+            <marker date="1575969844211" expanded="true" signature="2857:2925" ph="select dt_co... departuretime" />
+            <marker date="1575969844211" expanded="true" signature="3063:3107" ph="select * fro... calcRestTicket" />
+            <marker date="1575969844211" expanded="true" signature="4493:4754" ph="select * fro... sellticket" />
+            <marker date="1575969844211" expanded="true" signature="5157:5216" ph="select * fro... searchcredit" />
+            <marker date="1575969844211" expanded="true" signature="7742:7761" ph="select * fro... train" />
+            <marker date="1575969844211" expanded="true" signature="8094:8115" ph="select * fro... station" />
+            <marker date="1575969844211" expanded="true" signature="8541:8693" ph="select dt_tr... departuretime" />
+            <marker date="1575969844211" expanded="true" signature="9012:9035" ph="select * fro... conductor" />
+            <marker date="1575969844211" expanded="true" signature="9345:9366" ph="select * fro... manager" />
+            <marker date="1575969844211" expanded="true" signature="10777:10830" ph="select s_sid... station" />
+            <marker date="1575969844211" expanded="true" signature="11569:11599" ph="select max(s... station" />
+            <marker date="1575969844211" expanded="true" signature="11707:11787" ph="insert into station... " />
+            <marker date="1575969844211" expanded="true" signature="12131:12159" ph="select max(t... train" />
+            <marker date="1575969844211" expanded="true" signature="12259:12317" ph="insert into train... " />
+            <marker date="1575969844211" expanded="true" signature="12661:12839" ph="INSERT INTO departuretime... " />
+            <marker date="1575969844211" expanded="true" signature="13096:13128" ph="select max(c... conductor" />
+            <marker date="1575969844211" expanded="true" signature="13271:13347" ph="insert into conductor... " />
+            <marker date="1575969844211" expanded="true" signature="13381:13457" ph="insert into conductor... " />
+            <marker date="1575969844211" expanded="true" signature="14247:14277" ph="select max(m... manager" />
+            <marker date="1575969844211" expanded="true" signature="14406:14484" ph="insert into manager... " />
+            <marker date="1575969844211" expanded="true" signature="14518:14596" ph="insert into manager... " />
+            <marker date="1575969844211" expanded="true" signature="16261:16279" ph="select * fro... c_tc" />
+            <marker date="1575969844211" expanded="true" signature="16261:16299" ph="select * fro... c_tc" />
           </folding>
         </state>
       </provider>
@@ -501,38 +500,38 @@
           <folding>
             <element signature="e#0#15#0" expanded="true" />
             <element signature="e#4926#6211#0" expanded="false" />
+            <element signature="e#6263#7268#0" expanded="false" />
             <element signature="e#6390#6439#0" expanded="false" />
             <element signature="e#6476#6583#0" expanded="false" />
             <element signature="e#6622#6729#0" expanded="false" />
             <element signature="e#6774#6881#0" expanded="false" />
             <element signature="e#6919#7026#0" expanded="false" />
-            <element signature="e#7062#7169#0" expanded="false" />
-            <element signature="e#7203#7207#0" expanded="false" />
-            <element signature="e#7261#15971#0" expanded="false" />
-            <marker date="1575969541011" expanded="true" signature="1787:1814" ph="select s_sna... station" />
-            <marker date="1575969541011" expanded="true" signature="2049:2236" ph="select * fro... searchdetail" />
-            <marker date="1575969541011" expanded="true" signature="2857:2925" ph="select dt_co... departuretime" />
-            <marker date="1575969541011" expanded="true" signature="3063:3107" ph="select * fro... calcRestTicket" />
-            <marker date="1575969541011" expanded="true" signature="4493:4754" ph="select * fro... sellticket" />
-            <marker date="1575969541011" expanded="true" signature="5157:5216" ph="select * fro... searchcredit" />
-            <marker date="1575969541011" expanded="true" signature="7681:7700" ph="select * fro... train" />
-            <marker date="1575969541011" expanded="true" signature="8033:8054" ph="select * fro... station" />
-            <marker date="1575969541011" expanded="true" signature="8480:8632" ph="select dt_tr... departuretime" />
-            <marker date="1575969541011" expanded="true" signature="8951:8974" ph="select * fro... conductor" />
-            <marker date="1575969541011" expanded="true" signature="9284:9305" ph="select * fro... manager" />
-            <marker date="1575969541011" expanded="true" signature="10716:10769" ph="select s_sid... station" />
-            <marker date="1575969541011" expanded="true" signature="11508:11538" ph="select max(s... station" />
-            <marker date="1575969541011" expanded="true" signature="11646:11726" ph="insert into station... " />
-            <marker date="1575969541011" expanded="true" signature="12070:12098" ph="select max(t... train" />
-            <marker date="1575969541011" expanded="true" signature="12198:12256" ph="insert into train... " />
-            <marker date="1575969541011" expanded="true" signature="12600:12778" ph="INSERT INTO departuretime... " />
-            <marker date="1575969541011" expanded="true" signature="13035:13067" ph="select max(c... conductor" />
-            <marker date="1575969541011" expanded="true" signature="13210:13286" ph="insert into conductor... " />
-            <marker date="1575969541011" expanded="true" signature="13320:13396" ph="insert into conductor... " />
-            <marker date="1575969541011" expanded="true" signature="14186:14216" ph="select max(m... manager" />
-            <marker date="1575969541011" expanded="true" signature="14345:14423" ph="insert into manager... " />
-            <marker date="1575969541011" expanded="true" signature="14457:14535" ph="insert into manager... " />
-            <marker date="1575969541011" expanded="true" signature="16200:16218" ph="select * fro... c_tc" />
+            <element signature="e#7322#16032#0" expanded="false" />
+            <marker date="1575969844211" expanded="true" signature="1787:1814" ph="select s_sna... station" />
+            <marker date="1575969844211" expanded="true" signature="2049:2236" ph="select * fro... searchdetail" />
+            <marker date="1575969844211" expanded="true" signature="2857:2925" ph="select dt_co... departuretime" />
+            <marker date="1575969844211" expanded="true" signature="3063:3107" ph="select * fro... calcRestTicket" />
+            <marker date="1575969844211" expanded="true" signature="4493:4754" ph="select * fro... sellticket" />
+            <marker date="1575969844211" expanded="true" signature="5157:5216" ph="select * fro... searchcredit" />
+            <marker date="1575969844211" expanded="true" signature="7742:7761" ph="select * fro... train" />
+            <marker date="1575969844211" expanded="true" signature="8094:8115" ph="select * fro... station" />
+            <marker date="1575969844211" expanded="true" signature="8541:8693" ph="select dt_tr... departuretime" />
+            <marker date="1575969844211" expanded="true" signature="9012:9035" ph="select * fro... conductor" />
+            <marker date="1575969844211" expanded="true" signature="9345:9366" ph="select * fro... manager" />
+            <marker date="1575969844211" expanded="true" signature="10777:10830" ph="select s_sid... station" />
+            <marker date="1575969844211" expanded="true" signature="11569:11599" ph="select max(s... station" />
+            <marker date="1575969844211" expanded="true" signature="11707:11787" ph="insert into station... " />
+            <marker date="1575969844211" expanded="true" signature="12131:12159" ph="select max(t... train" />
+            <marker date="1575969844211" expanded="true" signature="12259:12317" ph="insert into train... " />
+            <marker date="1575969844211" expanded="true" signature="12661:12839" ph="INSERT INTO departuretime... " />
+            <marker date="1575969844211" expanded="true" signature="13096:13128" ph="select max(c... conductor" />
+            <marker date="1575969844211" expanded="true" signature="13271:13347" ph="insert into conductor... " />
+            <marker date="1575969844211" expanded="true" signature="13381:13457" ph="insert into conductor... " />
+            <marker date="1575969844211" expanded="true" signature="14247:14277" ph="select max(m... manager" />
+            <marker date="1575969844211" expanded="true" signature="14406:14484" ph="insert into manager... " />
+            <marker date="1575969844211" expanded="true" signature="14518:14596" ph="insert into manager... " />
+            <marker date="1575969844211" expanded="true" signature="16261:16279" ph="select * fro... c_tc" />
+            <marker date="1575969844211" expanded="true" signature="16261:16299" ph="select * fro... c_tc" />
           </folding>
         </state>
       </provider>
@@ -619,38 +618,38 @@
           <folding>
             <element signature="e#0#15#0" expanded="true" />
             <element signature="e#4926#6211#0" expanded="false" />
+            <element signature="e#6263#7268#0" expanded="false" />
             <element signature="e#6390#6439#0" expanded="false" />
             <element signature="e#6476#6583#0" expanded="false" />
             <element signature="e#6622#6729#0" expanded="false" />
             <element signature="e#6774#6881#0" expanded="false" />
             <element signature="e#6919#7026#0" expanded="false" />
-            <element signature="e#7062#7169#0" expanded="false" />
-            <element signature="e#7203#7207#0" expanded="false" />
-            <element signature="e#7261#15971#0" expanded="false" />
-            <marker date="1575969541011" expanded="true" signature="1787:1814" ph="select s_sna... station" />
-            <marker date="1575969541011" expanded="true" signature="2049:2236" ph="select * fro... searchdetail" />
-            <marker date="1575969541011" expanded="true" signature="2857:2925" ph="select dt_co... departuretime" />
-            <marker date="1575969541011" expanded="true" signature="3063:3107" ph="select * fro... calcRestTicket" />
-            <marker date="1575969541011" expanded="true" signature="4493:4754" ph="select * fro... sellticket" />
-            <marker date="1575969541011" expanded="true" signature="5157:5216" ph="select * fro... searchcredit" />
-            <marker date="1575969541011" expanded="true" signature="7681:7700" ph="select * fro... train" />
-            <marker date="1575969541011" expanded="true" signature="8033:8054" ph="select * fro... station" />
-            <marker date="1575969541011" expanded="true" signature="8480:8632" ph="select dt_tr... departuretime" />
-            <marker date="1575969541011" expanded="true" signature="8951:8974" ph="select * fro... conductor" />
-            <marker date="1575969541011" expanded="true" signature="9284:9305" ph="select * fro... manager" />
-            <marker date="1575969541011" expanded="true" signature="10716:10769" ph="select s_sid... station" />
-            <marker date="1575969541011" expanded="true" signature="11508:11538" ph="select max(s... station" />
-            <marker date="1575969541011" expanded="true" signature="11646:11726" ph="insert into station... " />
-            <marker date="1575969541011" expanded="true" signature="12070:12098" ph="select max(t... train" />
-            <marker date="1575969541011" expanded="true" signature="12198:12256" ph="insert into train... " />
-            <marker date="1575969541011" expanded="true" signature="12600:12778" ph="INSERT INTO departuretime... " />
-            <marker date="1575969541011" expanded="true" signature="13035:13067" ph="select max(c... conductor" />
-            <marker date="1575969541011" expanded="true" signature="13210:13286" ph="insert into conductor... " />
-            <marker date="1575969541011" expanded="true" signature="13320:13396" ph="insert into conductor... " />
-            <marker date="1575969541011" expanded="true" signature="14186:14216" ph="select max(m... manager" />
-            <marker date="1575969541011" expanded="true" signature="14345:14423" ph="insert into manager... " />
-            <marker date="1575969541011" expanded="true" signature="14457:14535" ph="insert into manager... " />
-            <marker date="1575969541011" expanded="true" signature="16200:16218" ph="select * fro... c_tc" />
+            <element signature="e#7322#16032#0" expanded="false" />
+            <marker date="1575969844211" expanded="true" signature="1787:1814" ph="select s_sna... station" />
+            <marker date="1575969844211" expanded="true" signature="2049:2236" ph="select * fro... searchdetail" />
+            <marker date="1575969844211" expanded="true" signature="2857:2925" ph="select dt_co... departuretime" />
+            <marker date="1575969844211" expanded="true" signature="3063:3107" ph="select * fro... calcRestTicket" />
+            <marker date="1575969844211" expanded="true" signature="4493:4754" ph="select * fro... sellticket" />
+            <marker date="1575969844211" expanded="true" signature="5157:5216" ph="select * fro... searchcredit" />
+            <marker date="1575969844211" expanded="true" signature="7742:7761" ph="select * fro... train" />
+            <marker date="1575969844211" expanded="true" signature="8094:8115" ph="select * fro... station" />
+            <marker date="1575969844211" expanded="true" signature="8541:8693" ph="select dt_tr... departuretime" />
+            <marker date="1575969844211" expanded="true" signature="9012:9035" ph="select * fro... conductor" />
+            <marker date="1575969844211" expanded="true" signature="9345:9366" ph="select * fro... manager" />
+            <marker date="1575969844211" expanded="true" signature="10777:10830" ph="select s_sid... station" />
+            <marker date="1575969844211" expanded="true" signature="11569:11599" ph="select max(s... station" />
+            <marker date="1575969844211" expanded="true" signature="11707:11787" ph="insert into station... " />
+            <marker date="1575969844211" expanded="true" signature="12131:12159" ph="select max(t... train" />
+            <marker date="1575969844211" expanded="true" signature="12259:12317" ph="insert into train... " />
+            <marker date="1575969844211" expanded="true" signature="12661:12839" ph="INSERT INTO departuretime... " />
+            <marker date="1575969844211" expanded="true" signature="13096:13128" ph="select max(c... conductor" />
+            <marker date="1575969844211" expanded="true" signature="13271:13347" ph="insert into conductor... " />
+            <marker date="1575969844211" expanded="true" signature="13381:13457" ph="insert into conductor... " />
+            <marker date="1575969844211" expanded="true" signature="14247:14277" ph="select max(m... manager" />
+            <marker date="1575969844211" expanded="true" signature="14406:14484" ph="insert into manager... " />
+            <marker date="1575969844211" expanded="true" signature="14518:14596" ph="insert into manager... " />
+            <marker date="1575969844211" expanded="true" signature="16261:16279" ph="select * fro... c_tc" />
+            <marker date="1575969844211" expanded="true" signature="16261:16299" ph="select * fro... c_tc" />
           </folding>
         </state>
       </provider>
@@ -662,38 +661,38 @@
           <folding>
             <element signature="e#0#15#0" expanded="true" />
             <element signature="e#4926#6211#0" expanded="false" />
+            <element signature="e#6263#7268#0" expanded="false" />
             <element signature="e#6390#6439#0" expanded="false" />
             <element signature="e#6476#6583#0" expanded="false" />
             <element signature="e#6622#6729#0" expanded="false" />
             <element signature="e#6774#6881#0" expanded="false" />
             <element signature="e#6919#7026#0" expanded="false" />
-            <element signature="e#7062#7169#0" expanded="false" />
-            <element signature="e#7203#7207#0" expanded="false" />
-            <element signature="e#7261#15971#0" expanded="false" />
-            <marker date="1575969541011" expanded="true" signature="1787:1814" ph="select s_sna... station" />
-            <marker date="1575969541011" expanded="true" signature="2049:2236" ph="select * fro... searchdetail" />
-            <marker date="1575969541011" expanded="true" signature="2857:2925" ph="select dt_co... departuretime" />
-            <marker date="1575969541011" expanded="true" signature="3063:3107" ph="select * fro... calcRestTicket" />
-            <marker date="1575969541011" expanded="true" signature="4493:4754" ph="select * fro... sellticket" />
-            <marker date="1575969541011" expanded="true" signature="5157:5216" ph="select * fro... searchcredit" />
-            <marker date="1575969541011" expanded="true" signature="7681:7700" ph="select * fro... train" />
-            <marker date="1575969541011" expanded="true" signature="8033:8054" ph="select * fro... station" />
-            <marker date="1575969541011" expanded="true" signature="8480:8632" ph="select dt_tr... departuretime" />
-            <marker date="1575969541011" expanded="true" signature="8951:8974" ph="select * fro... conductor" />
-            <marker date="1575969541011" expanded="true" signature="9284:9305" ph="select * fro... manager" />
-            <marker date="1575969541011" expanded="true" signature="10716:10769" ph="select s_sid... station" />
-            <marker date="1575969541011" expanded="true" signature="11508:11538" ph="select max(s... station" />
-            <marker date="1575969541011" expanded="true" signature="11646:11726" ph="insert into station... " />
-            <marker date="1575969541011" expanded="true" signature="12070:12098" ph="select max(t... train" />
-            <marker date="1575969541011" expanded="true" signature="12198:12256" ph="insert into train... " />
-            <marker date="1575969541011" expanded="true" signature="12600:12778" ph="INSERT INTO departuretime... " />
-            <marker date="1575969541011" expanded="true" signature="13035:13067" ph="select max(c... conductor" />
-            <marker date="1575969541011" expanded="true" signature="13210:13286" ph="insert into conductor... " />
-            <marker date="1575969541011" expanded="true" signature="13320:13396" ph="insert into conductor... " />
-            <marker date="1575969541011" expanded="true" signature="14186:14216" ph="select max(m... manager" />
-            <marker date="1575969541011" expanded="true" signature="14345:14423" ph="insert into manager... " />
-            <marker date="1575969541011" expanded="true" signature="14457:14535" ph="insert into manager... " />
-            <marker date="1575969541011" expanded="true" signature="16200:16218" ph="select * fro... c_tc" />
+            <element signature="e#7322#16032#0" expanded="false" />
+            <marker date="1575969844211" expanded="true" signature="1787:1814" ph="select s_sna... station" />
+            <marker date="1575969844211" expanded="true" signature="2049:2236" ph="select * fro... searchdetail" />
+            <marker date="1575969844211" expanded="true" signature="2857:2925" ph="select dt_co... departuretime" />
+            <marker date="1575969844211" expanded="true" signature="3063:3107" ph="select * fro... calcRestTicket" />
+            <marker date="1575969844211" expanded="true" signature="4493:4754" ph="select * fro... sellticket" />
+            <marker date="1575969844211" expanded="true" signature="5157:5216" ph="select * fro... searchcredit" />
+            <marker date="1575969844211" expanded="true" signature="7742:7761" ph="select * fro... train" />
+            <marker date="1575969844211" expanded="true" signature="8094:8115" ph="select * fro... station" />
+            <marker date="1575969844211" expanded="true" signature="8541:8693" ph="select dt_tr... departuretime" />
+            <marker date="1575969844211" expanded="true" signature="9012:9035" ph="select * fro... conductor" />
+            <marker date="1575969844211" expanded="true" signature="9345:9366" ph="select * fro... manager" />
+            <marker date="1575969844211" expanded="true" signature="10777:10830" ph="select s_sid... station" />
+            <marker date="1575969844211" expanded="true" signature="11569:11599" ph="select max(s... station" />
+            <marker date="1575969844211" expanded="true" signature="11707:11787" ph="insert into station... " />
+            <marker date="1575969844211" expanded="true" signature="12131:12159" ph="select max(t... train" />
+            <marker date="1575969844211" expanded="true" signature="12259:12317" ph="insert into train... " />
+            <marker date="1575969844211" expanded="true" signature="12661:12839" ph="INSERT INTO departuretime... " />
+            <marker date="1575969844211" expanded="true" signature="13096:13128" ph="select max(c... conductor" />
+            <marker date="1575969844211" expanded="true" signature="13271:13347" ph="insert into conductor... " />
+            <marker date="1575969844211" expanded="true" signature="13381:13457" ph="insert into conductor... " />
+            <marker date="1575969844211" expanded="true" signature="14247:14277" ph="select max(m... manager" />
+            <marker date="1575969844211" expanded="true" signature="14406:14484" ph="insert into manager... " />
+            <marker date="1575969844211" expanded="true" signature="14518:14596" ph="insert into manager... " />
+            <marker date="1575969844211" expanded="true" signature="16261:16279" ph="select * fro... c_tc" />
+            <marker date="1575969844211" expanded="true" signature="16261:16299" ph="select * fro... c_tc" />
           </folding>
         </state>
       </provider>
@@ -721,38 +720,38 @@
           <folding>
             <element signature="e#0#15#0" expanded="true" />
             <element signature="e#4926#6211#0" expanded="false" />
+            <element signature="e#6263#7268#0" expanded="false" />
             <element signature="e#6390#6439#0" expanded="false" />
             <element signature="e#6476#6583#0" expanded="false" />
             <element signature="e#6622#6729#0" expanded="false" />
             <element signature="e#6774#6881#0" expanded="false" />
             <element signature="e#6919#7026#0" expanded="false" />
-            <element signature="e#7062#7169#0" expanded="false" />
-            <element signature="e#7203#7207#0" expanded="false" />
-            <element signature="e#7261#15971#0" expanded="false" />
-            <marker date="1575969541011" expanded="true" signature="1787:1814" ph="select s_sna... station" />
-            <marker date="1575969541011" expanded="true" signature="2049:2236" ph="select * fro... searchdetail" />
-            <marker date="1575969541011" expanded="true" signature="2857:2925" ph="select dt_co... departuretime" />
-            <marker date="1575969541011" expanded="true" signature="3063:3107" ph="select * fro... calcRestTicket" />
-            <marker date="1575969541011" expanded="true" signature="4493:4754" ph="select * fro... sellticket" />
-            <marker date="1575969541011" expanded="true" signature="5157:5216" ph="select * fro... searchcredit" />
-            <marker date="1575969541011" expanded="true" signature="7681:7700" ph="select * fro... train" />
-            <marker date="1575969541011" expanded="true" signature="8033:8054" ph="select * fro... station" />
-            <marker date="1575969541011" expanded="true" signature="8480:8632" ph="select dt_tr... departuretime" />
-            <marker date="1575969541011" expanded="true" signature="8951:8974" ph="select * fro... conductor" />
-            <marker date="1575969541011" expanded="true" signature="9284:9305" ph="select * fro... manager" />
-            <marker date="1575969541011" expanded="true" signature="10716:10769" ph="select s_sid... station" />
-            <marker date="1575969541011" expanded="true" signature="11508:11538" ph="select max(s... station" />
-            <marker date="1575969541011" expanded="true" signature="11646:11726" ph="insert into station... " />
-            <marker date="1575969541011" expanded="true" signature="12070:12098" ph="select max(t... train" />
-            <marker date="1575969541011" expanded="true" signature="12198:12256" ph="insert into train... " />
-            <marker date="1575969541011" expanded="true" signature="12600:12778" ph="INSERT INTO departuretime... " />
-            <marker date="1575969541011" expanded="true" signature="13035:13067" ph="select max(c... conductor" />
-            <marker date="1575969541011" expanded="true" signature="13210:13286" ph="insert into conductor... " />
-            <marker date="1575969541011" expanded="true" signature="13320:13396" ph="insert into conductor... " />
-            <marker date="1575969541011" expanded="true" signature="14186:14216" ph="select max(m... manager" />
-            <marker date="1575969541011" expanded="true" signature="14345:14423" ph="insert into manager... " />
-            <marker date="1575969541011" expanded="true" signature="14457:14535" ph="insert into manager... " />
-            <marker date="1575969541011" expanded="true" signature="16200:16218" ph="select * fro... c_tc" />
+            <element signature="e#7322#16032#0" expanded="false" />
+            <marker date="1575969844211" expanded="true" signature="1787:1814" ph="select s_sna... station" />
+            <marker date="1575969844211" expanded="true" signature="2049:2236" ph="select * fro... searchdetail" />
+            <marker date="1575969844211" expanded="true" signature="2857:2925" ph="select dt_co... departuretime" />
+            <marker date="1575969844211" expanded="true" signature="3063:3107" ph="select * fro... calcRestTicket" />
+            <marker date="1575969844211" expanded="true" signature="4493:4754" ph="select * fro... sellticket" />
+            <marker date="1575969844211" expanded="true" signature="5157:5216" ph="select * fro... searchcredit" />
+            <marker date="1575969844211" expanded="true" signature="7742:7761" ph="select * fro... train" />
+            <marker date="1575969844211" expanded="true" signature="8094:8115" ph="select * fro... station" />
+            <marker date="1575969844211" expanded="true" signature="8541:8693" ph="select dt_tr... departuretime" />
+            <marker date="1575969844211" expanded="true" signature="9012:9035" ph="select * fro... conductor" />
+            <marker date="1575969844211" expanded="true" signature="9345:9366" ph="select * fro... manager" />
+            <marker date="1575969844211" expanded="true" signature="10777:10830" ph="select s_sid... station" />
+            <marker date="1575969844211" expanded="true" signature="11569:11599" ph="select max(s... station" />
+            <marker date="1575969844211" expanded="true" signature="11707:11787" ph="insert into station... " />
+            <marker date="1575969844211" expanded="true" signature="12131:12159" ph="select max(t... train" />
+            <marker date="1575969844211" expanded="true" signature="12259:12317" ph="insert into train... " />
+            <marker date="1575969844211" expanded="true" signature="12661:12839" ph="INSERT INTO departuretime... " />
+            <marker date="1575969844211" expanded="true" signature="13096:13128" ph="select max(c... conductor" />
+            <marker date="1575969844211" expanded="true" signature="13271:13347" ph="insert into conductor... " />
+            <marker date="1575969844211" expanded="true" signature="13381:13457" ph="insert into conductor... " />
+            <marker date="1575969844211" expanded="true" signature="14247:14277" ph="select max(m... manager" />
+            <marker date="1575969844211" expanded="true" signature="14406:14484" ph="insert into manager... " />
+            <marker date="1575969844211" expanded="true" signature="14518:14596" ph="insert into manager... " />
+            <marker date="1575969844211" expanded="true" signature="16261:16279" ph="select * fro... c_tc" />
+            <marker date="1575969844211" expanded="true" signature="16261:16299" ph="select * fro... c_tc" />
           </folding>
         </state>
       </provider>
@@ -771,38 +770,38 @@
           <folding>
             <element signature="e#0#15#0" expanded="true" />
             <element signature="e#4926#6211#0" expanded="false" />
+            <element signature="e#6263#7268#0" expanded="false" />
             <element signature="e#6390#6439#0" expanded="false" />
             <element signature="e#6476#6583#0" expanded="false" />
             <element signature="e#6622#6729#0" expanded="false" />
             <element signature="e#6774#6881#0" expanded="false" />
             <element signature="e#6919#7026#0" expanded="false" />
-            <element signature="e#7062#7169#0" expanded="false" />
-            <element signature="e#7203#7207#0" expanded="false" />
-            <element signature="e#7261#15971#0" expanded="false" />
-            <marker date="1575969541011" expanded="true" signature="1787:1814" ph="select s_sna... station" />
-            <marker date="1575969541011" expanded="true" signature="2049:2236" ph="select * fro... searchdetail" />
-            <marker date="1575969541011" expanded="true" signature="2857:2925" ph="select dt_co... departuretime" />
-            <marker date="1575969541011" expanded="true" signature="3063:3107" ph="select * fro... calcRestTicket" />
-            <marker date="1575969541011" expanded="true" signature="4493:4754" ph="select * fro... sellticket" />
-            <marker date="1575969541011" expanded="true" signature="5157:5216" ph="select * fro... searchcredit" />
-            <marker date="1575969541011" expanded="true" signature="7681:7700" ph="select * fro... train" />
-            <marker date="1575969541011" expanded="true" signature="8033:8054" ph="select * fro... station" />
-            <marker date="1575969541011" expanded="true" signature="8480:8632" ph="select dt_tr... departuretime" />
-            <marker date="1575969541011" expanded="true" signature="8951:8974" ph="select * fro... conductor" />
-            <marker date="1575969541011" expanded="true" signature="9284:9305" ph="select * fro... manager" />
-            <marker date="1575969541011" expanded="true" signature="10716:10769" ph="select s_sid... station" />
-            <marker date="1575969541011" expanded="true" signature="11508:11538" ph="select max(s... station" />
-            <marker date="1575969541011" expanded="true" signature="11646:11726" ph="insert into station... " />
-            <marker date="1575969541011" expanded="true" signature="12070:12098" ph="select max(t... train" />
-            <marker date="1575969541011" expanded="true" signature="12198:12256" ph="insert into train... " />
-            <marker date="1575969541011" expanded="true" signature="12600:12778" ph="INSERT INTO departuretime... " />
-            <marker date="1575969541011" expanded="true" signature="13035:13067" ph="select max(c... conductor" />
-            <marker date="1575969541011" expanded="true" signature="13210:13286" ph="insert into conductor... " />
-            <marker date="1575969541011" expanded="true" signature="13320:13396" ph="insert into conductor... " />
-            <marker date="1575969541011" expanded="true" signature="14186:14216" ph="select max(m... manager" />
-            <marker date="1575969541011" expanded="true" signature="14345:14423" ph="insert into manager... " />
-            <marker date="1575969541011" expanded="true" signature="14457:14535" ph="insert into manager... " />
-            <marker date="1575969541011" expanded="true" signature="16200:16218" ph="select * fro... c_tc" />
+            <element signature="e#7322#16032#0" expanded="false" />
+            <marker date="1575969844211" expanded="true" signature="1787:1814" ph="select s_sna... station" />
+            <marker date="1575969844211" expanded="true" signature="2049:2236" ph="select * fro... searchdetail" />
+            <marker date="1575969844211" expanded="true" signature="2857:2925" ph="select dt_co... departuretime" />
+            <marker date="1575969844211" expanded="true" signature="3063:3107" ph="select * fro... calcRestTicket" />
+            <marker date="1575969844211" expanded="true" signature="4493:4754" ph="select * fro... sellticket" />
+            <marker date="1575969844211" expanded="true" signature="5157:5216" ph="select * fro... searchcredit" />
+            <marker date="1575969844211" expanded="true" signature="7742:7761" ph="select * fro... train" />
+            <marker date="1575969844211" expanded="true" signature="8094:8115" ph="select * fro... station" />
+            <marker date="1575969844211" expanded="true" signature="8541:8693" ph="select dt_tr... departuretime" />
+            <marker date="1575969844211" expanded="true" signature="9012:9035" ph="select * fro... conductor" />
+            <marker date="1575969844211" expanded="true" signature="9345:9366" ph="select * fro... manager" />
+            <marker date="1575969844211" expanded="true" signature="10777:10830" ph="select s_sid... station" />
+            <marker date="1575969844211" expanded="true" signature="11569:11599" ph="select max(s... station" />
+            <marker date="1575969844211" expanded="true" signature="11707:11787" ph="insert into station... " />
+            <marker date="1575969844211" expanded="true" signature="12131:12159" ph="select max(t... train" />
+            <marker date="1575969844211" expanded="true" signature="12259:12317" ph="insert into train... " />
+            <marker date="1575969844211" expanded="true" signature="12661:12839" ph="INSERT INTO departuretime... " />
+            <marker date="1575969844211" expanded="true" signature="13096:13128" ph="select max(c... conductor" />
+            <marker date="1575969844211" expanded="true" signature="13271:13347" ph="insert into conductor... " />
+            <marker date="1575969844211" expanded="true" signature="13381:13457" ph="insert into conductor... " />
+            <marker date="1575969844211" expanded="true" signature="14247:14277" ph="select max(m... manager" />
+            <marker date="1575969844211" expanded="true" signature="14406:14484" ph="insert into manager... " />
+            <marker date="1575969844211" expanded="true" signature="14518:14596" ph="insert into manager... " />
+            <marker date="1575969844211" expanded="true" signature="16261:16279" ph="select * fro... c_tc" />
+            <marker date="1575969844211" expanded="true" signature="16261:16299" ph="select * fro... c_tc" />
           </folding>
         </state>
       </provider>
@@ -814,38 +813,38 @@
           <folding>
             <element signature="e#0#15#0" expanded="true" />
             <element signature="e#4926#6211#0" expanded="false" />
+            <element signature="e#6263#7268#0" expanded="false" />
             <element signature="e#6390#6439#0" expanded="false" />
             <element signature="e#6476#6583#0" expanded="false" />
             <element signature="e#6622#6729#0" expanded="false" />
             <element signature="e#6774#6881#0" expanded="false" />
             <element signature="e#6919#7026#0" expanded="false" />
-            <element signature="e#7062#7169#0" expanded="false" />
-            <element signature="e#7203#7207#0" expanded="false" />
-            <element signature="e#7261#15971#0" expanded="false" />
-            <marker date="1575969541011" expanded="true" signature="1787:1814" ph="select s_sna... station" />
-            <marker date="1575969541011" expanded="true" signature="2049:2236" ph="select * fro... searchdetail" />
-            <marker date="1575969541011" expanded="true" signature="2857:2925" ph="select dt_co... departuretime" />
-            <marker date="1575969541011" expanded="true" signature="3063:3107" ph="select * fro... calcRestTicket" />
-            <marker date="1575969541011" expanded="true" signature="4493:4754" ph="select * fro... sellticket" />
-            <marker date="1575969541011" expanded="true" signature="5157:5216" ph="select * fro... searchcredit" />
-            <marker date="1575969541011" expanded="true" signature="7681:7700" ph="select * fro... train" />
-            <marker date="1575969541011" expanded="true" signature="8033:8054" ph="select * fro... station" />
-            <marker date="1575969541011" expanded="true" signature="8480:8632" ph="select dt_tr... departuretime" />
-            <marker date="1575969541011" expanded="true" signature="8951:8974" ph="select * fro... conductor" />
-            <marker date="1575969541011" expanded="true" signature="9284:9305" ph="select * fro... manager" />
-            <marker date="1575969541011" expanded="true" signature="10716:10769" ph="select s_sid... station" />
-            <marker date="1575969541011" expanded="true" signature="11508:11538" ph="select max(s... station" />
-            <marker date="1575969541011" expanded="true" signature="11646:11726" ph="insert into station... " />
-            <marker date="1575969541011" expanded="true" signature="12070:12098" ph="select max(t... train" />
-            <marker date="1575969541011" expanded="true" signature="12198:12256" ph="insert into train... " />
-            <marker date="1575969541011" expanded="true" signature="12600:12778" ph="INSERT INTO departuretime... " />
-            <marker date="1575969541011" expanded="true" signature="13035:13067" ph="select max(c... conductor" />
-            <marker date="1575969541011" expanded="true" signature="13210:13286" ph="insert into conductor... " />
-            <marker date="1575969541011" expanded="true" signature="13320:13396" ph="insert into conductor... " />
-            <marker date="1575969541011" expanded="true" signature="14186:14216" ph="select max(m... manager" />
-            <marker date="1575969541011" expanded="true" signature="14345:14423" ph="insert into manager... " />
-            <marker date="1575969541011" expanded="true" signature="14457:14535" ph="insert into manager... " />
-            <marker date="1575969541011" expanded="true" signature="16200:16218" ph="select * fro... c_tc" />
+            <element signature="e#7322#16032#0" expanded="false" />
+            <marker date="1575969844211" expanded="true" signature="1787:1814" ph="select s_sna... station" />
+            <marker date="1575969844211" expanded="true" signature="2049:2236" ph="select * fro... searchdetail" />
+            <marker date="1575969844211" expanded="true" signature="2857:2925" ph="select dt_co... departuretime" />
+            <marker date="1575969844211" expanded="true" signature="3063:3107" ph="select * fro... calcRestTicket" />
+            <marker date="1575969844211" expanded="true" signature="4493:4754" ph="select * fro... sellticket" />
+            <marker date="1575969844211" expanded="true" signature="5157:5216" ph="select * fro... searchcredit" />
+            <marker date="1575969844211" expanded="true" signature="7742:7761" ph="select * fro... train" />
+            <marker date="1575969844211" expanded="true" signature="8094:8115" ph="select * fro... station" />
+            <marker date="1575969844211" expanded="true" signature="8541:8693" ph="select dt_tr... departuretime" />
+            <marker date="1575969844211" expanded="true" signature="9012:9035" ph="select * fro... conductor" />
+            <marker date="1575969844211" expanded="true" signature="9345:9366" ph="select * fro... manager" />
+            <marker date="1575969844211" expanded="true" signature="10777:10830" ph="select s_sid... station" />
+            <marker date="1575969844211" expanded="true" signature="11569:11599" ph="select max(s... station" />
+            <marker date="1575969844211" expanded="true" signature="11707:11787" ph="insert into station... " />
+            <marker date="1575969844211" expanded="true" signature="12131:12159" ph="select max(t... train" />
+            <marker date="1575969844211" expanded="true" signature="12259:12317" ph="insert into train... " />
+            <marker date="1575969844211" expanded="true" signature="12661:12839" ph="INSERT INTO departuretime... " />
+            <marker date="1575969844211" expanded="true" signature="13096:13128" ph="select max(c... conductor" />
+            <marker date="1575969844211" expanded="true" signature="13271:13347" ph="insert into conductor... " />
+            <marker date="1575969844211" expanded="true" signature="13381:13457" ph="insert into conductor... " />
+            <marker date="1575969844211" expanded="true" signature="14247:14277" ph="select max(m... manager" />
+            <marker date="1575969844211" expanded="true" signature="14406:14484" ph="insert into manager... " />
+            <marker date="1575969844211" expanded="true" signature="14518:14596" ph="insert into manager... " />
+            <marker date="1575969844211" expanded="true" signature="16261:16279" ph="select * fro... c_tc" />
+            <marker date="1575969844211" expanded="true" signature="16261:16299" ph="select * fro... c_tc" />
           </folding>
         </state>
       </provider>
@@ -927,43 +926,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/login.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="402" column="26" lean-forward="true" selection-start-line="402" selection-start-column="26" selection-end-line="402" selection-end-column="26" />
+        <state relative-caret-position="165">
+          <caret line="392" column="39" lean-forward="true" selection-start-line="392" selection-start-column="39" selection-end-line="392" selection-end-column="39" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
             <element signature="e#4926#6211#0" expanded="false" />
+            <element signature="e#6263#7268#0" expanded="false" />
             <element signature="e#6390#6439#0" expanded="false" />
             <element signature="e#6476#6583#0" expanded="false" />
             <element signature="e#6622#6729#0" expanded="false" />
             <element signature="e#6774#6881#0" expanded="false" />
             <element signature="e#6919#7026#0" expanded="false" />
-            <element signature="e#7062#7169#0" expanded="false" />
-            <element signature="e#7203#7207#0" expanded="false" />
-            <element signature="e#7261#15971#0" expanded="false" />
-            <marker date="1575969541011" expanded="true" signature="1787:1814" ph="select s_sna... station" />
-            <marker date="1575969541011" expanded="true" signature="2049:2236" ph="select * fro... searchdetail" />
-            <marker date="1575969541011" expanded="true" signature="2857:2925" ph="select dt_co... departuretime" />
-            <marker date="1575969541011" expanded="true" signature="3063:3107" ph="select * fro... calcRestTicket" />
-            <marker date="1575969541011" expanded="true" signature="4493:4754" ph="select * fro... sellticket" />
-            <marker date="1575969541011" expanded="true" signature="5157:5216" ph="select * fro... searchcredit" />
-            <marker date="1575969541011" expanded="true" signature="7681:7700" ph="select * fro... train" />
-            <marker date="1575969541011" expanded="true" signature="8033:8054" ph="select * fro... station" />
-            <marker date="1575969541011" expanded="true" signature="8480:8632" ph="select dt_tr... departuretime" />
-            <marker date="1575969541011" expanded="true" signature="8951:8974" ph="select * fro... conductor" />
-            <marker date="1575969541011" expanded="true" signature="9284:9305" ph="select * fro... manager" />
-            <marker date="1575969541011" expanded="true" signature="10716:10769" ph="select s_sid... station" />
-            <marker date="1575969541011" expanded="true" signature="11508:11538" ph="select max(s... station" />
-            <marker date="1575969541011" expanded="true" signature="11646:11726" ph="insert into station... " />
-            <marker date="1575969541011" expanded="true" signature="12070:12098" ph="select max(t... train" />
-            <marker date="1575969541011" expanded="true" signature="12198:12256" ph="insert into train... " />
-            <marker date="1575969541011" expanded="true" signature="12600:12778" ph="INSERT INTO departuretime... " />
-            <marker date="1575969541011" expanded="true" signature="13035:13067" ph="select max(c... conductor" />
-            <marker date="1575969541011" expanded="true" signature="13210:13286" ph="insert into conductor... " />
-            <marker date="1575969541011" expanded="true" signature="13320:13396" ph="insert into conductor... " />
-            <marker date="1575969541011" expanded="true" signature="14186:14216" ph="select max(m... manager" />
-            <marker date="1575969541011" expanded="true" signature="14345:14423" ph="insert into manager... " />
-            <marker date="1575969541011" expanded="true" signature="14457:14535" ph="insert into manager... " />
-            <marker date="1575969541011" expanded="true" signature="16200:16218" ph="select * fro... c_tc" />
+            <element signature="e#7322#16032#0" expanded="false" />
+            <marker date="1575969844211" expanded="true" signature="1787:1814" ph="select s_sna... station" />
+            <marker date="1575969844211" expanded="true" signature="2049:2236" ph="select * fro... searchdetail" />
+            <marker date="1575969844211" expanded="true" signature="2857:2925" ph="select dt_co... departuretime" />
+            <marker date="1575969844211" expanded="true" signature="3063:3107" ph="select * fro... calcRestTicket" />
+            <marker date="1575969844211" expanded="true" signature="4493:4754" ph="select * fro... sellticket" />
+            <marker date="1575969844211" expanded="true" signature="5157:5216" ph="select * fro... searchcredit" />
+            <marker date="1575969844211" expanded="true" signature="7742:7761" ph="select * fro... train" />
+            <marker date="1575969844211" expanded="true" signature="8094:8115" ph="select * fro... station" />
+            <marker date="1575969844211" expanded="true" signature="8541:8693" ph="select dt_tr... departuretime" />
+            <marker date="1575969844211" expanded="true" signature="9012:9035" ph="select * fro... conductor" />
+            <marker date="1575969844211" expanded="true" signature="9345:9366" ph="select * fro... manager" />
+            <marker date="1575969844211" expanded="true" signature="10777:10830" ph="select s_sid... station" />
+            <marker date="1575969844211" expanded="true" signature="11569:11599" ph="select max(s... station" />
+            <marker date="1575969844211" expanded="true" signature="11707:11787" ph="insert into station... " />
+            <marker date="1575969844211" expanded="true" signature="12131:12159" ph="select max(t... train" />
+            <marker date="1575969844211" expanded="true" signature="12259:12317" ph="insert into train... " />
+            <marker date="1575969844211" expanded="true" signature="12661:12839" ph="INSERT INTO departuretime... " />
+            <marker date="1575969844211" expanded="true" signature="13096:13128" ph="select max(c... conductor" />
+            <marker date="1575969844211" expanded="true" signature="13271:13347" ph="insert into conductor... " />
+            <marker date="1575969844211" expanded="true" signature="13381:13457" ph="insert into conductor... " />
+            <marker date="1575969844211" expanded="true" signature="14247:14277" ph="select max(m... manager" />
+            <marker date="1575969844211" expanded="true" signature="14406:14484" ph="insert into manager... " />
+            <marker date="1575969844211" expanded="true" signature="14518:14596" ph="insert into manager... " />
+            <marker date="1575969844211" expanded="true" signature="16261:16279" ph="select * fro... c_tc" />
+            <marker date="1575969844211" expanded="true" signature="16261:16299" ph="select * fro... c_tc" />
           </folding>
         </state>
       </provider>
