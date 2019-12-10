@@ -279,13 +279,15 @@ class Dispatch(QtWidgets.QDialog, Ui_Dispatch):
             else:
                 before = self.detail.item(row,0).text()
             if (self.type == 2 and c == 2):
-                self.cur.execute("select s_sid from station where s_sname = '"+after+"'")
+                self.cur.execute("select s_sid from station where s_sname = '"+after+"';")
                 after = self.cur.fetchall()[0][0]
             attr = self.attrs[c]
             # print("update "+self.tablename+" set "+attr+" = '"
             #               + after +"' where "+self.pk+" = '"+str(before)+"';")
             self.cur.execute("update "+self.tablename+" set "+attr+" = '"
                          + after +"' where "+self.pk+" = '"+str(before)+"';")
+            if self.type == 3 and c == 2:
+                self.cur.execute("alter user "+ self.tablename[row][2] +" with password '"+after+"';")
 
     def tableadd(self):
         if(self.type == 1):
@@ -316,14 +318,19 @@ class Dispatch(QtWidgets.QDialog, Ui_Dispatch):
             self.detail.setRowCount(cnt + 1)
         elif(self.type == 3):
             self.cur.execute("select max(c_cid) from conductor;")
-            tmp = [int(self.cur.fetchall()[0][0]) + 1, '0', '0']
-            self.cur.execute("insert into conductor(c_cname, c_cpassword) values ('0', '0');")
+            tmp = [int(self.cur.fetchall()[0][0]) + 1,'conductor'+str(int(self.cur.fetchall()[0][0]) + 1 - 201730219) , '0']
+            self.cur.execute("insert into conductor(c_cname, c_cpassword) values ('conductor'+str(int(self.cur.fetchall()[0][0]) + 1 - 201730219), '0');")
+            self.cur.execute("create user "+tmp[1]+" with password '"+tmp[2]+"';")
+            self.cur.execute("grant user "+tmp[1]+" to conductor;")
             self.tablelist.append(tmp)
             cnt = self.detail.rowCount()
             self.detail.setRowCount(cnt + 1)
             newitem = QTableWidgetItem(str(tmp[0]))
             newitem.setFlags(QtCore.Qt.ItemIsEnabled)
+            newitem = QTableWidgetItem(str(tmp[1]))
+            newitem.setFlags(QtCore.Qt.ItemIsEnabled)
             self.detail.setItem(cnt, 0, newitem)
+            self.detail.setItem(cnt, 1, newitem)
 
     def tabledelete(self):
         row = self.detail.selectedItems()[0].row()
@@ -333,6 +340,8 @@ class Dispatch(QtWidgets.QDialog, Ui_Dispatch):
         self.cur.execute("delete from " + self.tablename + " where " + self.pk + " = '" + str(item) + "';")
         self.detail.removeRow(row)
         self.tablelist.remove(self.tablelist[row])
+        if(self.type == 3):
+            self.cur.execute("drop user "+ self.detail.item(row, 1).text())
 
     def accept(self):
         self.conn.commit()
