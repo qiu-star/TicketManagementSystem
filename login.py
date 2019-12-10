@@ -187,6 +187,11 @@ class Manager(QtWidgets.QDialog, Ui_Manager):
         self.dispatchui.connectDB(self.conn, 1)
         self.dispatchui.show()
 
+    def updatedeparturetime(self):
+        self.dispatchui = Dispatch()
+        self.dispatchui.connectDB(self.conn, 2)
+        self.dispatchui.show()
+
 class Dispatch(QtWidgets.QDialog, Ui_Dispatch):
     def __init__(self):
         super(Dispatch, self).__init__()
@@ -197,8 +202,6 @@ class Dispatch(QtWidgets.QDialog, Ui_Dispatch):
         self.conn = conn
         self.cur = conn.cursor()
         self.type = type
-        # self.title.setStyleSheet("font: 14pt \"方正颜宋简体\";")
-        # self.title.setGeometry(QtCore.QRect(320, 30, 211, 41))
         if(type == 0):
             hlist = ['车ID', '车型', '座位数']
             self.attrs = ['t_tid', 't_ttype', 't_seatnum']
@@ -207,7 +210,22 @@ class Dispatch(QtWidgets.QDialog, Ui_Dispatch):
             self.title.setText('车辆修改')
             self.tablename = "train"
             self.pk = 't_tid'
-        #elif(type == 1):
+        elif(type == 1):
+            hlist = ['站台ID', '站台名', '站台经度', '站台纬度']
+            self.attrs = ['s_sid', 's_sname', 's_slongitude', 's_slatitude']
+            self.cur.execute("select * from station;")
+            list = self.cur.fetchall()
+            self.title.setText('站点修改')
+            self.tablename = 'station'
+            self.pk = 's_sid'
+        elif(type == 2):
+            hlist = ['车次','车ID', '终点站',  '发车时间', '检票口', '发车月份', '发车日期', '车票价格']
+            self.attrs = ['dt_trainnum', 'dt_tid', 'dt_aimsid',  'dt_departuretime', 'dt_ticketentrance', 'dt_month', 'dt_date', 'dt_cost']
+            self.cur.execute("select dt_departuretime, dt_tid, s_sname, dt_trainnum,  dt_ticketentrance, dt_month, dt_date, dt_cost from departuretime,station where dt_aimsid = s_sid;")
+            list = self.cur.fetchall()
+            self.title.setText('车次修改')
+            self.tablename = 'departuretime'
+            self.pk = 'dt_trainnum'
         self.setdetail(hlist, list);
 
     def setdetail(self, hlist, list):
@@ -223,7 +241,7 @@ class Dispatch(QtWidgets.QDialog, Ui_Dispatch):
                     break
                 line.append(str(jtem))
                 newitem = QTableWidgetItem(str(jtem))
-                if j == 0:
+                if ((j == 0) and (self.type != 2)):
                     newitem.setFlags(QtCore.Qt.ItemIsEnabled)
                 self.detail.setItem(i, j, newitem)
             self.tablelist.append(line)
@@ -239,7 +257,20 @@ class Dispatch(QtWidgets.QDialog, Ui_Dispatch):
         attr = self.attrs[c]
         self.cur.execute("update "+self.tablename+" set "+attr+" = "
                          + after +" where "+self.pk+" = '"+before+"';")
-        #self.cur.fetchall()
+
+    def tableadd(self):
+        if(type == 2):
+            self.cur.execute("INSERT INTO departuretime(dt_tid, dt_aimsid, dt_trainnum, dt_departuretime, dt_ticketentrance, dt_month, dt_date, dt_cost) VALUES (201912091, 10011701, 0, '00:00:00', 0, 0, 0, 0);")
+            tmp = ['201912091', '10011701', '00:00:00', 0, 0, 0, 0]
+            self.tablelist.append(tmp)
+            cnt = self.detail.rowCount()
+            self.detail.setRowCount(cnt + 1)
+            print(cnt)
+            # for j, jtem in enumerate(tmp):
+            #     newitem = QTableWidgetItem(str(jtem))
+            #     if ((j == 0) and (self.type != 2)):
+            #         newitem.setFlags(QtCore.Qt.ItemIsEnabled)
+            #     self.detail.setItem(, j, newitem)
 
 
     def accept(self):

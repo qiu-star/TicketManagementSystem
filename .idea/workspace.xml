@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8b2f905-aa2c-4b24-841a-8a352a87aeb6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/DispatchUI.py" afterPath="$PROJECT_DIR$/DispatchUI.py" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/DispatchUI.ui" afterPath="$PROJECT_DIR$/DispatchUI.ui" />
+      <change beforePath="$PROJECT_DIR$/ManagerUI.py" afterPath="$PROJECT_DIR$/ManagerUI.py" />
+      <change beforePath="$PROJECT_DIR$/ManagerUI.ui" afterPath="$PROJECT_DIR$/ManagerUI.ui" />
       <change beforePath="$PROJECT_DIR$/login.py" afterPath="$PROJECT_DIR$/login.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,25 +17,31 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/TicketManagementSystem$test.coverage" NAME="test Coverage Results" MODIFIED="1575863372655" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/TicketManagementSystem$login.coverage" NAME="login Coverage Results" MODIFIED="1575945912729" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TicketManagementSystem$login.coverage" NAME="login Coverage Results" MODIFIED="1575947298495" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file leaf-file-name="login.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/login.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="187" column="30" lean-forward="false" selection-start-line="187" selection-start-column="30" selection-end-line="187" selection-end-column="30" />
+            <state relative-caret-position="234">
+              <caret line="267" column="21" lean-forward="false" selection-start-line="267" selection-start-column="21" selection-end-line="267" selection-end-column="21" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
                 <element signature="e#4893#6178#0" expanded="false" />
-                <marker date="1575946011259" expanded="true" signature="1754:1781" ph="select s_sna... station" />
-                <marker date="1575946011259" expanded="true" signature="2016:2203" ph="select * fro... searchdetail" />
-                <marker date="1575946011259" expanded="true" signature="2824:2892" ph="select dt_co... departuretime" />
-                <marker date="1575946011259" expanded="true" signature="3030:3074" ph="select * fro... calcRestTicket" />
-                <marker date="1575946011259" expanded="true" signature="4460:4721" ph="select * fro... sellticket" />
-                <marker date="1575946011259" expanded="true" signature="5124:5183" ph="select * fro... searchcredit" />
-                <marker date="1575946011259" expanded="true" signature="7296:7315" ph="select * fro... train" />
+                <marker date="1575948479815" expanded="true" signature="1754:1781" ph="select s_sna... station" />
+                <marker date="1575948479815" expanded="true" signature="2016:2203" ph="select * fro... searchdetail" />
+                <marker date="1575948479815" expanded="true" signature="2824:2892" ph="select dt_co... departuretime" />
+                <marker date="1575948479815" expanded="true" signature="3030:3074" ph="select * fro... calcRestTicket" />
+                <marker date="1575948479815" expanded="true" signature="4460:4721" ph="select * fro... sellticket" />
+                <marker date="1575948479815" expanded="true" signature="5124:5183" ph="select * fro... searchcredit" />
+                <marker date="1575948479815" expanded="true" signature="7322:7341" ph="select * fro... train" />
+                <marker date="1575948479815" expanded="true" signature="7674:7695" ph="select * fro... station" />
+                <marker date="1575948479815" expanded="true" signature="8121:8228" ph="select * fro... station" />
+                <marker date="1575948479815" expanded="true" signature="8121:8237" ph="select * fro... departuretime" />
+                <marker date="1575948479815" expanded="true" signature="8121:8249" ph="select dt_ti... departuretime" />
+                <marker date="1575948479815" expanded="true" signature="8121:8273" ph="select dt_ti... departuretime" />
+                <marker date="1575948479815" expanded="true" signature="9702:9880" ph="INSERT INTO departuretime... " />
               </folding>
             </state>
           </provider>
@@ -237,13 +246,19 @@
           <folding>
             <element signature="e#0#15#0" expanded="true" />
             <element signature="e#4893#6178#0" expanded="false" />
-            <marker date="1575946011259" expanded="true" signature="1754:1781" ph="select s_sna... station" />
-            <marker date="1575946011259" expanded="true" signature="2016:2203" ph="select * fro... searchdetail" />
-            <marker date="1575946011259" expanded="true" signature="2824:2892" ph="select dt_co... departuretime" />
-            <marker date="1575946011259" expanded="true" signature="3030:3074" ph="select * fro... calcRestTicket" />
-            <marker date="1575946011259" expanded="true" signature="4460:4721" ph="select * fro... sellticket" />
-            <marker date="1575946011259" expanded="true" signature="5124:5183" ph="select * fro... searchcredit" />
-            <marker date="1575946011259" expanded="true" signature="7296:7315" ph="select * fro... train" />
+            <marker date="1575948479815" expanded="true" signature="1754:1781" ph="select s_sna... station" />
+            <marker date="1575948479815" expanded="true" signature="2016:2203" ph="select * fro... searchdetail" />
+            <marker date="1575948479815" expanded="true" signature="2824:2892" ph="select dt_co... departuretime" />
+            <marker date="1575948479815" expanded="true" signature="3030:3074" ph="select * fro... calcRestTicket" />
+            <marker date="1575948479815" expanded="true" signature="4460:4721" ph="select * fro... sellticket" />
+            <marker date="1575948479815" expanded="true" signature="5124:5183" ph="select * fro... searchcredit" />
+            <marker date="1575948479815" expanded="true" signature="7322:7341" ph="select * fro... train" />
+            <marker date="1575948479815" expanded="true" signature="7674:7695" ph="select * fro... station" />
+            <marker date="1575948479815" expanded="true" signature="8121:8228" ph="select * fro... station" />
+            <marker date="1575948479815" expanded="true" signature="8121:8237" ph="select * fro... departuretime" />
+            <marker date="1575948479815" expanded="true" signature="8121:8249" ph="select dt_ti... departuretime" />
+            <marker date="1575948479815" expanded="true" signature="8121:8273" ph="select dt_ti... departuretime" />
+            <marker date="1575948479815" expanded="true" signature="9702:9880" ph="INSERT INTO departuretime... " />
           </folding>
         </state>
       </provider>
@@ -271,13 +286,19 @@
           <folding>
             <element signature="e#0#15#0" expanded="true" />
             <element signature="e#4893#6178#0" expanded="false" />
-            <marker date="1575946011259" expanded="true" signature="1754:1781" ph="select s_sna... station" />
-            <marker date="1575946011259" expanded="true" signature="2016:2203" ph="select * fro... searchdetail" />
-            <marker date="1575946011259" expanded="true" signature="2824:2892" ph="select dt_co... departuretime" />
-            <marker date="1575946011259" expanded="true" signature="3030:3074" ph="select * fro... calcRestTicket" />
-            <marker date="1575946011259" expanded="true" signature="4460:4721" ph="select * fro... sellticket" />
-            <marker date="1575946011259" expanded="true" signature="5124:5183" ph="select * fro... searchcredit" />
-            <marker date="1575946011259" expanded="true" signature="7296:7315" ph="select * fro... train" />
+            <marker date="1575948479815" expanded="true" signature="1754:1781" ph="select s_sna... station" />
+            <marker date="1575948479815" expanded="true" signature="2016:2203" ph="select * fro... searchdetail" />
+            <marker date="1575948479815" expanded="true" signature="2824:2892" ph="select dt_co... departuretime" />
+            <marker date="1575948479815" expanded="true" signature="3030:3074" ph="select * fro... calcRestTicket" />
+            <marker date="1575948479815" expanded="true" signature="4460:4721" ph="select * fro... sellticket" />
+            <marker date="1575948479815" expanded="true" signature="5124:5183" ph="select * fro... searchcredit" />
+            <marker date="1575948479815" expanded="true" signature="7322:7341" ph="select * fro... train" />
+            <marker date="1575948479815" expanded="true" signature="7674:7695" ph="select * fro... station" />
+            <marker date="1575948479815" expanded="true" signature="8121:8228" ph="select * fro... station" />
+            <marker date="1575948479815" expanded="true" signature="8121:8237" ph="select * fro... departuretime" />
+            <marker date="1575948479815" expanded="true" signature="8121:8249" ph="select dt_ti... departuretime" />
+            <marker date="1575948479815" expanded="true" signature="8121:8273" ph="select dt_ti... departuretime" />
+            <marker date="1575948479815" expanded="true" signature="9702:9880" ph="INSERT INTO departuretime... " />
           </folding>
         </state>
       </provider>
@@ -296,13 +317,19 @@
           <folding>
             <element signature="e#0#15#0" expanded="true" />
             <element signature="e#4893#6178#0" expanded="false" />
-            <marker date="1575946011259" expanded="true" signature="1754:1781" ph="select s_sna... station" />
-            <marker date="1575946011259" expanded="true" signature="2016:2203" ph="select * fro... searchdetail" />
-            <marker date="1575946011259" expanded="true" signature="2824:2892" ph="select dt_co... departuretime" />
-            <marker date="1575946011259" expanded="true" signature="3030:3074" ph="select * fro... calcRestTicket" />
-            <marker date="1575946011259" expanded="true" signature="4460:4721" ph="select * fro... sellticket" />
-            <marker date="1575946011259" expanded="true" signature="5124:5183" ph="select * fro... searchcredit" />
-            <marker date="1575946011259" expanded="true" signature="7296:7315" ph="select * fro... train" />
+            <marker date="1575948479815" expanded="true" signature="1754:1781" ph="select s_sna... station" />
+            <marker date="1575948479815" expanded="true" signature="2016:2203" ph="select * fro... searchdetail" />
+            <marker date="1575948479815" expanded="true" signature="2824:2892" ph="select dt_co... departuretime" />
+            <marker date="1575948479815" expanded="true" signature="3030:3074" ph="select * fro... calcRestTicket" />
+            <marker date="1575948479815" expanded="true" signature="4460:4721" ph="select * fro... sellticket" />
+            <marker date="1575948479815" expanded="true" signature="5124:5183" ph="select * fro... searchcredit" />
+            <marker date="1575948479815" expanded="true" signature="7322:7341" ph="select * fro... train" />
+            <marker date="1575948479815" expanded="true" signature="7674:7695" ph="select * fro... station" />
+            <marker date="1575948479815" expanded="true" signature="8121:8228" ph="select * fro... station" />
+            <marker date="1575948479815" expanded="true" signature="8121:8237" ph="select * fro... departuretime" />
+            <marker date="1575948479815" expanded="true" signature="8121:8249" ph="select dt_ti... departuretime" />
+            <marker date="1575948479815" expanded="true" signature="8121:8273" ph="select dt_ti... departuretime" />
+            <marker date="1575948479815" expanded="true" signature="9702:9880" ph="INSERT INTO departuretime... " />
           </folding>
         </state>
       </provider>
@@ -314,13 +341,19 @@
           <folding>
             <element signature="e#0#15#0" expanded="true" />
             <element signature="e#4893#6178#0" expanded="false" />
-            <marker date="1575946011259" expanded="true" signature="1754:1781" ph="select s_sna... station" />
-            <marker date="1575946011259" expanded="true" signature="2016:2203" ph="select * fro... searchdetail" />
-            <marker date="1575946011259" expanded="true" signature="2824:2892" ph="select dt_co... departuretime" />
-            <marker date="1575946011259" expanded="true" signature="3030:3074" ph="select * fro... calcRestTicket" />
-            <marker date="1575946011259" expanded="true" signature="4460:4721" ph="select * fro... sellticket" />
-            <marker date="1575946011259" expanded="true" signature="5124:5183" ph="select * fro... searchcredit" />
-            <marker date="1575946011259" expanded="true" signature="7296:7315" ph="select * fro... train" />
+            <marker date="1575948479815" expanded="true" signature="1754:1781" ph="select s_sna... station" />
+            <marker date="1575948479815" expanded="true" signature="2016:2203" ph="select * fro... searchdetail" />
+            <marker date="1575948479815" expanded="true" signature="2824:2892" ph="select dt_co... departuretime" />
+            <marker date="1575948479815" expanded="true" signature="3030:3074" ph="select * fro... calcRestTicket" />
+            <marker date="1575948479815" expanded="true" signature="4460:4721" ph="select * fro... sellticket" />
+            <marker date="1575948479815" expanded="true" signature="5124:5183" ph="select * fro... searchcredit" />
+            <marker date="1575948479815" expanded="true" signature="7322:7341" ph="select * fro... train" />
+            <marker date="1575948479815" expanded="true" signature="7674:7695" ph="select * fro... station" />
+            <marker date="1575948479815" expanded="true" signature="8121:8228" ph="select * fro... station" />
+            <marker date="1575948479815" expanded="true" signature="8121:8237" ph="select * fro... departuretime" />
+            <marker date="1575948479815" expanded="true" signature="8121:8249" ph="select dt_ti... departuretime" />
+            <marker date="1575948479815" expanded="true" signature="8121:8273" ph="select dt_ti... departuretime" />
+            <marker date="1575948479815" expanded="true" signature="9702:9880" ph="INSERT INTO departuretime... " />
           </folding>
         </state>
       </provider>
@@ -402,18 +435,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/login.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="187" column="30" lean-forward="false" selection-start-line="187" selection-start-column="30" selection-end-line="187" selection-end-column="30" />
+        <state relative-caret-position="234">
+          <caret line="267" column="21" lean-forward="false" selection-start-line="267" selection-start-column="21" selection-end-line="267" selection-end-column="21" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
             <element signature="e#4893#6178#0" expanded="false" />
-            <marker date="1575946011259" expanded="true" signature="1754:1781" ph="select s_sna... station" />
-            <marker date="1575946011259" expanded="true" signature="2016:2203" ph="select * fro... searchdetail" />
-            <marker date="1575946011259" expanded="true" signature="2824:2892" ph="select dt_co... departuretime" />
-            <marker date="1575946011259" expanded="true" signature="3030:3074" ph="select * fro... calcRestTicket" />
-            <marker date="1575946011259" expanded="true" signature="4460:4721" ph="select * fro... sellticket" />
-            <marker date="1575946011259" expanded="true" signature="5124:5183" ph="select * fro... searchcredit" />
-            <marker date="1575946011259" expanded="true" signature="7296:7315" ph="select * fro... train" />
+            <marker date="1575948479815" expanded="true" signature="1754:1781" ph="select s_sna... station" />
+            <marker date="1575948479815" expanded="true" signature="2016:2203" ph="select * fro... searchdetail" />
+            <marker date="1575948479815" expanded="true" signature="2824:2892" ph="select dt_co... departuretime" />
+            <marker date="1575948479815" expanded="true" signature="3030:3074" ph="select * fro... calcRestTicket" />
+            <marker date="1575948479815" expanded="true" signature="4460:4721" ph="select * fro... sellticket" />
+            <marker date="1575948479815" expanded="true" signature="5124:5183" ph="select * fro... searchcredit" />
+            <marker date="1575948479815" expanded="true" signature="7322:7341" ph="select * fro... train" />
+            <marker date="1575948479815" expanded="true" signature="7674:7695" ph="select * fro... station" />
+            <marker date="1575948479815" expanded="true" signature="8121:8228" ph="select * fro... station" />
+            <marker date="1575948479815" expanded="true" signature="8121:8237" ph="select * fro... departuretime" />
+            <marker date="1575948479815" expanded="true" signature="8121:8249" ph="select dt_ti... departuretime" />
+            <marker date="1575948479815" expanded="true" signature="8121:8273" ph="select dt_ti... departuretime" />
+            <marker date="1575948479815" expanded="true" signature="9702:9880" ph="INSERT INTO departuretime... " />
           </folding>
         </state>
       </provider>
