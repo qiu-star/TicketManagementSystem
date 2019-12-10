@@ -17,6 +17,7 @@ class Ui_Dispatch(object):
         Dispatch.setStyleSheet("font: 14pt \"方正颜宋简体\";")
         self.detail = QtWidgets.QTableWidget(Dispatch)
         self.detail.setGeometry(QtCore.QRect(40, 130, 571, 301))
+        self.detail.setStyleSheet("font: 10pt \"微软雅黑\";")
         self.detail.setObjectName("detail")
         self.detail.setColumnCount(0)
         self.detail.setRowCount(0)

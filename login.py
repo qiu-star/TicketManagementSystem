@@ -10,26 +10,23 @@ from ManagerUI import Ui_Manager
 from DispatchUI import Ui_Dispatch
 
 class Login(QtWidgets.QWidget, Ui_Form):
-    def __init__(self, conductorui, sellui, refundui, managerui, dispatchui):
+    def __init__(self, conductorui, managerui):
         super(Login, self).__init__()
         self.setupUi(self)
         self.conductorui = conductorui
-        self.sellui = sellui
-        self.refundui = refundui
         self.managerui = managerui
-        self.dispatchui = dispatchui
 
     def accept(self):
         if(self.ifconductor.isChecked()):
             self.conn = psycopg2.connect(database="TicketManagementSystem", user=self.nametext.toPlainText(),
                                          password=self.passwordtext.toPlainText(), host="localhost", port="5432")
-            self.conductorui.connectDB(self.conn, self.sellui, self.refundui, self.nametext.toPlainText())
+            self.conductorui.connectDB(self.conn, self.nametext.toPlainText())
             self.conductorui.show()
             self.close()
         elif(self.ifmanager.isChecked()):
             self.conn = psycopg2.connect(database="TicketManagementSystem", user=self.nametext.toPlainText(),
                                          password=self.passwordtext.toPlainText(), host="localhost", port="5432")
-            self.managerui.connectDB(self.conn, self.dispatchui)
+            self.managerui.connectDB(self.conn)
             self.managerui.show()
             self.close()
         else:
@@ -44,12 +41,10 @@ class Conductor(QtWidgets.QDialog, Ui_Dialog):
         super(Conductor, self).__init__()
         self.setupUi(self)
 
-    def connectDB(self,conn, sellui, refundui, conductor):
-        self.sellui = sellui
+    def connectDB(self,conn, conductor):
         self.conn = conn
         self.cur = self.conn.cursor()
         self.conductor = conductor
-        self.refundui = refundui
 
         self.cur.execute("select s_sname from station;")
         tmp = self.cur.fetchall()
@@ -89,11 +84,13 @@ class Conductor(QtWidgets.QDialog, Ui_Dialog):
     def tosell(self):
         # 车次
         trainnum = self.detail.selectedItems()[0].text()
+        self.sellui = Sell()
         self.sellui.connectDB(self.conn, trainnum, self.month.value(), self.date.value(),
                               self.aimstation.currentText(), self.pricenum, self.restnum, self.conductor)
         self.sellui.show()
 
     def torefund(self):
+        self.refundui = Refund()
         self.refundui.connectDB(self.conn)
         self.refundui.show()
 
@@ -176,13 +173,18 @@ class Manager(QtWidgets.QDialog, Ui_Manager):
         super(Manager, self).__init__()
         self.setupUi(self)
 
-    def connectDB(self, conn, dispatchui):
+    def connectDB(self, conn):
         self.conn = conn
         self.cur = conn.cursor()
-        self.dispatchui = dispatchui
 
     def updatetrain(self):
-        self,dispatchui.connectDB(self.conn, 0)
+        self.dispatchui = Dispatch()
+        self.dispatchui.connectDB(self.conn, 0)
+        self.dispatchui.show()
+
+    def updatestation(self):
+        self.dispatchui = Dispatch()
+        self.dispatchui.connectDB(self.conn, 1)
         self.dispatchui.show()
 
 class Dispatch(QtWidgets.QDialog, Ui_Dispatch):
@@ -198,14 +200,18 @@ class Dispatch(QtWidgets.QDialog, Ui_Dispatch):
         # self.title.setStyleSheet("font: 14pt \"方正颜宋简体\";")
         # self.title.setGeometry(QtCore.QRect(320, 30, 211, 41))
         if(type == 0):
-            self.hlist = ['车ID', '车型', '座位数']
+            hlist = ['车ID', '车型', '座位数']
+            self.attrs = ['t_tid', 't_ttype', 't_seatnum']
             self.cur.execute("select * from train;")
             list = self.cur.fetchall()
             self.title.setText('车辆修改')
+            self.tablename = "train"
+            self.pk = 't_tid'
         #elif(type == 1):
-        self.setdetail(self.hlist, list);
+        self.setdetail(hlist, list);
 
     def setdetail(self, hlist, list):
+        self.cur.execute("begin transaction;")
         self.detail.setColumnCount(len(hlist))
         self.detail.setHorizontalHeaderLabels(hlist)
         self.detail.setRowCount(len(list))
@@ -217,6 +223,8 @@ class Dispatch(QtWidgets.QDialog, Ui_Dispatch):
                     break
                 line.append(str(jtem))
                 newitem = QTableWidgetItem(str(jtem))
+                if j == 0:
+                    newitem.setFlags(QtCore.Qt.ItemIsEnabled)
                 self.detail.setItem(i, j, newitem)
             self.tablelist.append(line)
 
@@ -226,10 +234,13 @@ class Dispatch(QtWidgets.QDialog, Ui_Dispatch):
             return
         row = selects[0].row()
         c = selects[0].column()
-        before = self.tablelist[row][c]
+        before = self.tablelist[row][0]
         after = selects[0].text()
-        attr = self.hlist[c]
-        
+        attr = self.attrs[c]
+        self.cur.execute("update "+self.tablename+" set "+attr+" = "
+                         + after +" where "+self.pk+" = '"+before+"';")
+        #self.cur.fetchall()
+
 
     def accept(self):
         self.conn.commit()
@@ -243,10 +254,7 @@ if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)
 
     conductorui = Conductor()
-    sellui = Sell()
-    refundui = Refund()
     managerui = Manager()
-    dispatchui = Dispatch()
-    loginui = Login(conductorui, sellui, refundui, managerui, dispatchui)
+    loginui = Login(conductorui, managerui)
     loginui.show()
     sys.exit(app.exec())
