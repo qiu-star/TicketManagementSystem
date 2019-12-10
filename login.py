@@ -256,28 +256,57 @@ class Dispatch(QtWidgets.QDialog, Ui_Dispatch):
         for s in selects:
             row = s.row()
             c = s.column()
-            before = self.tablelist[row][0]
             after = s.text()
+            if c == 0:
+                before = self.tablelist[row][0]
+                self.tablelist[row][0] = after
+            else:
+                before = self.detail.item(row,0).text()
             if (self.type == 2 and c == 2):
                 self.cur.execute("select s_sid from station where s_sname = '"+after+"'")
                 after = self.cur.fetchall()[0][0]
             attr = self.attrs[c]
+            # print("update "+self.tablename+" set "+attr+" = '"
+            #               + after +"' where "+self.pk+" = '"+str(before)+"';")
             self.cur.execute("update "+self.tablename+" set "+attr+" = '"
-                         + after +"' where "+self.pk+" = '"+before+"';")
+                         + after +"' where "+self.pk+" = '"+str(before)+"';")
 
     def tableadd(self):
-        if(self.type == 0):
-            print(int(self.cur.execute("select max(s_sid) from station;")))
-            #self.cur.execute("insert into station(s_sname, s_slongitude, s_slatitude) values('undefine', 0, 0);")
-        elif(self.type == 1):
-            pass
+        if(self.type == 1):
+            self.cur.execute("select max(s_sid) from station;")
+            tmp = [int(self.cur.fetchall()[0][0])+1,'undefine', '0', '0']
+            self.cur.execute("insert into station(s_sname, s_slongitude, s_slatitude) values('undefine', 0, 0);")
+            self.tablelist.append(tmp)
+            cnt = self.detail.rowCount()
+            self.detail.setRowCount(cnt + 1)
+            newitem = QTableWidgetItem(str(tmp[0]))
+            newitem.setFlags(QtCore.Qt.ItemIsEnabled)
+            self.detail.setItem(cnt, 0, newitem)
+        elif(self.type == 0):
+            self.cur.execute("select max(t_tid) from train;")
+            tmp = [int(self.cur.fetchall()[0][0]) + 1, '空调硬座', 0]
+            self.cur.execute("insert into train(t_ttype, t_seatnum) values ('空调软卧', 300);")
+            self.tablelist.append(tmp)
+            cnt = self.detail.rowCount()
+            self.detail.setRowCount(cnt + 1)
+            newitem = QTableWidgetItem(str(tmp[0]))
+            newitem.setFlags(QtCore.Qt.ItemIsEnabled)
+            self.detail.setItem(cnt, 0, newitem)
         elif(self.type == 2):
             self.cur.execute("INSERT INTO departuretime(dt_tid, dt_aimsid, dt_trainnum, dt_departuretime, dt_ticketentrance, dt_month, dt_date, dt_cost) VALUES (201912091, 10011701, 0, '00:00:00', 0, 0, 0, 0);")
-            tmp = ['201912091', '10011701', '00:00:00', 0, 0, 0, 0]
+            tmp = [0, '201912091', '10011701', '00:00:00', 0, 0, 0]
             self.tablelist.append(tmp)
             cnt = self.detail.rowCount()
             self.detail.setRowCount(cnt + 1)
 
+    def tabledelete(self):
+        row = self.detail.selectedItems()[0].row()
+        item = self.detail.item(row, 0).text()
+        print(item)
+        print("delete from "+self.tablename+" where "+self.pk+" = '"+str(item)+"';")
+        self.cur.execute("delete from " + self.tablename + " where " + self.pk + " = '" + str(item) + "';")
+        self.detail.removeRow(row)
+        self.tablelist.remove(self.tablelist[row])
 
     def accept(self):
         self.conn.commit()

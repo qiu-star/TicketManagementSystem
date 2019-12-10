@@ -13,7 +13,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Dispatch(object):
     def setupUi(self, Dispatch):
         Dispatch.setObjectName("Dispatch")
-        Dispatch.resize(778, 530)
+        Dispatch.resize(784, 530)
         Dispatch.setStyleSheet("font: 14pt \"方正颜宋简体\";")
         self.detail = QtWidgets.QTableWidget(Dispatch)
         self.detail.setGeometry(QtCore.QRect(40, 130, 571, 301))
@@ -57,6 +57,7 @@ class Ui_Dispatch(object):
         self.retranslateUi(Dispatch)
         self.acceptbtn.clicked.connect(Dispatch.accept)
         self.cancelbtn.clicked.connect(Dispatch.exit)
+        self.addbtn.clicked.connect(Dispatch.tableadd)
         QtCore.QMetaObject.connectSlotsByName(Dispatch)
 
     def retranslateUi(self, Dispatch):

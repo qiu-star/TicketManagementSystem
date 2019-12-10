@@ -182,9 +182,26 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>deletebtn</sender>
+   <signal>clicked()</signal>
+   <receiver>Dispatch</receiver>
+   <slot>tabledelete()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>523</x>
+     <y>467</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>598</x>
+     <y>477</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>exit()</slot>
   <slot>tableadd()</slot>
+  <slot>tabledelete()</slot>
  </slots>
 </ui>
