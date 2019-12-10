@@ -192,6 +192,9 @@ class Manager(QtWidgets.QDialog, Ui_Manager):
         self.dispatchui.connectDB(self.conn, 2)
         self.dispatchui.show()
 
+    def addconductor(self):
+        pass
+
 class Dispatch(QtWidgets.QDialog, Ui_Dispatch):
     def __init__(self):
         super(Dispatch, self).__init__()
@@ -264,7 +267,8 @@ class Dispatch(QtWidgets.QDialog, Ui_Dispatch):
 
     def tableadd(self):
         if(self.type == 0):
-            print(1)
+            print(int(self.cur.execute("select max(s_sid) from station;")))
+            #self.cur.execute("insert into station(s_sname, s_slongitude, s_slatitude) values('undefine', 0, 0);")
         elif(self.type == 1):
             pass
         elif(self.type == 2):

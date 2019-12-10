@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>778</width>
+    <width>784</width>
     <height>530</height>
    </rect>
   </property>
@@ -145,7 +145,7 @@
      <y>311</y>
     </hint>
     <hint type="destinationlabel">
-     <x>794</x>
+     <x>778</x>
      <y>350</y>
     </hint>
    </hints>
@@ -161,13 +161,30 @@
      <y>389</y>
     </hint>
     <hint type="destinationlabel">
-     <x>782</x>
+     <x>778</x>
      <y>432</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>addbtn</sender>
+   <signal>clicked()</signal>
+   <receiver>Dispatch</receiver>
+   <slot>tableadd()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>200</x>
+     <y>472</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>259</x>
+     <y>471</y>
     </hint>
    </hints>
   </connection>
  </connections>
  <slots>
   <slot>exit()</slot>
+  <slot>tableadd()</slot>
  </slots>
 </ui>
