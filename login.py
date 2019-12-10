@@ -189,33 +189,54 @@ class Dispatch(QtWidgets.QDialog, Ui_Dispatch):
     def __init__(self):
         super(Dispatch, self).__init__()
         self.setupUi(self)
+        self.detail.itemChanged.connect(self.tableupdate)
 
     def connectDB(self, conn, type):
         self.conn = conn
         self.cur = conn.cursor()
-        self.title.setStyleSheet("font: 14pt \"方正颜宋简体\";")
-        self.title.setGeometry(QtCore.QRect(320, 30, 211, 41))
+        self.type = type
+        # self.title.setStyleSheet("font: 14pt \"方正颜宋简体\";")
+        # self.title.setGeometry(QtCore.QRect(320, 30, 211, 41))
         if(type == 0):
-            hlist = ['车ID', '车型', '座位数']
+            self.hlist = ['车ID', '车型', '座位数']
             self.cur.execute("select * from train;")
             list = self.cur.fetchall()
             self.title.setText('车辆修改')
         #elif(type == 1):
-        self.setdetail(hlist, list);
+        self.setdetail(self.hlist, list);
 
     def setdetail(self, hlist, list):
         self.detail.setColumnCount(len(hlist))
         self.detail.setHorizontalHeaderLabels(hlist)
         self.detail.setRowCount(len(list))
+        self.tablelist = []
         for i, item in enumerate(list):
+            line = []
             for j, jtem in enumerate(item):
                 if jtem == None:
                     break
+                line.append(str(jtem))
                 newitem = QTableWidgetItem(str(jtem))
                 self.detail.setItem(i, j, newitem)
+            self.tablelist.append(line)
+
+    def tableupdate(self):
+        selects = self.detail.selectedItems()
+        if(len(selects) == 0):
+            return
+        row = selects[0].row()
+        c = selects[0].column()
+        before = self.tablelist[row][c]
+        after = selects[0].text()
+        attr = self.hlist[c]
+        
 
     def accept(self):
-        print(self.detail.itemSelectionChanged()[0].text())
+        self.conn.commit()
+        self.close()
+
+    def exit(self):
+        self.conn.rollback()
         self.close()
 
 if __name__ == '__main__':

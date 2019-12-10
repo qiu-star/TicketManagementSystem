@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>820</width>
-    <height>472</height>
+    <width>778</width>
+    <height>530</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -24,6 +24,9 @@
      <width>571</width>
      <height>301</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 10pt &quot;微软雅黑&quot;;</string>
    </property>
   </widget>
   <widget class="Line" name="line">
@@ -68,7 +71,7 @@
    <property name="geometry">
     <rect>
      <x>630</x>
-     <y>290</y>
+     <y>130</y>
      <width>111</width>
      <height>41</height>
     </rect>
@@ -84,7 +87,7 @@
    <property name="geometry">
     <rect>
      <x>630</x>
-     <y>360</y>
+     <y>200</y>
      <width>111</width>
      <height>41</height>
     </rect>
@@ -94,6 +97,38 @@
    </property>
    <property name="text">
     <string>取消</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="addbtn">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>450</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14pt &quot;方正颜宋简体&quot;;</string>
+   </property>
+   <property name="text">
+    <string>增加</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="deletebtn">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>450</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14pt &quot;方正颜宋简体&quot;;</string>
+   </property>
+   <property name="text">
+    <string>删除</string>
    </property>
   </widget>
  </widget>
