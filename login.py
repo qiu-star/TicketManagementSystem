@@ -229,6 +229,22 @@ class Dispatch(QtWidgets.QDialog, Ui_Dispatch):
             self.title.setText('车次修改')
             self.tablename = 'departuretime'
             self.pk = 'dt_trainnum'
+        elif(type == 3):
+            hlist = ['工号', '用户名', '密码']
+            self.attrs = ['c_cid', 'c_cname', 'c_cpassword']
+            self.cur.execute("select * from conductor;")
+            list = self.cur.fetchall()
+            self.title.setText('售票员管理')
+            self.tablename = 'conductor'
+            self.pk = 'c_cid'
+        else:
+            hlist = ['工号', '用户名', '密码']
+            self.attrs = ['m_mid', 'm_mname', 'm_mpassword']
+            self.cur.execute("select * from manager;")
+            list = self.cur.fetchall()
+            self.title.setText('管理员管理')
+            self.tablename = 'manager'
+            self.pk = 'm_mid'
         self.setdetail(hlist, list);
 
     def setdetail(self, hlist, list):
@@ -298,6 +314,16 @@ class Dispatch(QtWidgets.QDialog, Ui_Dispatch):
             self.tablelist.append(tmp)
             cnt = self.detail.rowCount()
             self.detail.setRowCount(cnt + 1)
+        elif(self.type == 3):
+            self.cur.execute("select max(c_cid) from conductor;")
+            tmp = [int(self.cur.fetchall()[0][0]) + 1, '0', '0']
+            self.cur.execute("insert into conductor(c_cname, c_cpassword) values ('0', '0');")
+            self.tablelist.append(tmp)
+            cnt = self.detail.rowCount()
+            self.detail.setRowCount(cnt + 1)
+            newitem = QTableWidgetItem(str(tmp[0]))
+            newitem.setFlags(QtCore.Qt.ItemIsEnabled)
+            self.detail.setItem(cnt, 0, newitem)
 
     def tabledelete(self):
         row = self.detail.selectedItems()[0].row()
