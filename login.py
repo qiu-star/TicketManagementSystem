@@ -197,6 +197,14 @@ class Manager(QtWidgets.QDialog, Ui_Manager):
         self.dispatchui.connectDB(self.conn, 3)
         self.dispatchui.show()
 
+    def addmanager(self):
+        self.dispatchui = Dispatch()
+        self.dispatchui.connectDB(self.conn, 4)
+        self.dispatchui.show()
+
+    def showsell(self):
+        pass
+
 class Dispatch(QtWidgets.QDialog, Ui_Dispatch):
     def __init__(self):
         super(Dispatch, self).__init__()
@@ -239,7 +247,7 @@ class Dispatch(QtWidgets.QDialog, Ui_Dispatch):
             self.title.setText('售票员管理')
             self.tablename = 'conductor'
             self.pk = 'c_cid'
-        else:
+        elif(type == 4):
             hlist = ['工号', '用户名', '密码']
             self.attrs = ['m_mid', 'm_mname', 'm_mpassword']
             self.cur.execute("select * from manager;")
@@ -288,7 +296,7 @@ class Dispatch(QtWidgets.QDialog, Ui_Dispatch):
                           + after +"' where "+self.pk+" = '"+str(before)+"';")
             self.cur.execute("update "+self.tablename+" set "+attr+" = '"
                          + after +"' where "+self.pk+" = '"+str(before)+"';")
-            if (self.type == 3) and (c == 2):
+            if (self.type == 3 or self.type == 4) and (c == 2):
                 print("alter user " + self.tablelist[row][1] + " with password '" + str(after) + "';")
                 self.cur.execute("alter user "+ self.tablelist[row][1] +" with password '"+str(after)+"';")
 
@@ -338,6 +346,25 @@ class Dispatch(QtWidgets.QDialog, Ui_Dispatch):
             newitem = QTableWidgetItem(str(tmp[1]))
             newitem.setFlags(QtCore.Qt.ItemIsEnabled)
             self.detail.setItem(cnt, 1, newitem)
+        elif (self.type == 4):
+            self.cur.execute("select max(m_mid) from manager;")
+            i = self.cur.fetchall()[0][0]
+            tmp = [int(i) + 1, 'manager0' + str(int(i)+1), '0']
+            print("insert into manager(m_mname, m_mpassword) values ('" + str(tmp[1]) + "' , '0');")
+            self.cur.execute("insert into manager(m_mname, m_mpassword) values ('" + str(tmp[1]) + "' , '0');")
+            print("create user " + tmp[1] + " with password '" + tmp[2] + "';")
+            self.cur.execute("create user " + tmp[1] + " with password '" + tmp[2] + "';")
+            print("grant " + "manager to " + tmp[1] + ";")
+            self.cur.execute("grant " + "manager to " + tmp[1] + ";")
+            self.tablelist.append(tmp)
+            cnt = self.detail.rowCount()
+            self.detail.setRowCount(cnt + 1)
+            newitem = QTableWidgetItem(str(tmp[0]))
+            newitem.setFlags(QtCore.Qt.ItemIsEnabled)
+            self.detail.setItem(cnt, 0, newitem)
+            newitem = QTableWidgetItem(str(tmp[1]))
+            newitem.setFlags(QtCore.Qt.ItemIsEnabled)
+            self.detail.setItem(cnt, 1, newitem)
 
     def tabledelete(self):
         row = self.detail.selectedItems()[0].row()
@@ -345,7 +372,7 @@ class Dispatch(QtWidgets.QDialog, Ui_Dispatch):
         print(item)
         print("delete from "+self.tablename+" where "+self.pk+" = '"+str(item)+"';")
         self.cur.execute("delete from " + self.tablename + " where " + self.pk + " = '" + str(item) + "';")
-        if (self.type == 3):
+        if (self.type == 3 or self.type == 4):
             self.cur.execute("drop user " + self.detail.item(row, 1).text() + ";")
         self.detail.removeRow(row)
         self.tablelist.remove(self.tablelist[row])

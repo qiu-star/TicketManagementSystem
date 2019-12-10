@@ -71,6 +71,7 @@ class Ui_Manager(object):
         self.stationbtn.clicked.connect(Manager.updatestation)
         self.trainnumbtn.clicked.connect(Manager.updatedeparturetime)
         self.pushButton_4.clicked.connect(Manager.addconductor)
+        self.pushButton_5.clicked.connect(Manager.addmanager)
         QtCore.QMetaObject.connectSlotsByName(Manager)
 
     def retranslateUi(self, Manager):
@@ -79,8 +80,8 @@ class Ui_Manager(object):
         self.trainbtn.setText(_translate("Manager", "车辆修改"))
         self.stationbtn.setText(_translate("Manager", "站点修改"))
         self.trainnumbtn.setText(_translate("Manager", "车次修改"))
-        self.pushButton_4.setText(_translate("Manager", "添加售票员"))
-        self.pushButton_5.setText(_translate("Manager", "密码修改"))
+        self.pushButton_4.setText(_translate("Manager", "售票员管理"))
+        self.pushButton_5.setText(_translate("Manager", "管理员管理"))
         self.pushButton_6.setText(_translate("Manager", "售票统计"))
         self.label.setText(_translate("Manager", "调度功能"))
         self.label_2.setText(_translate("Manager", "维护功能"))

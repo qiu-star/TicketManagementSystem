@@ -263,11 +263,45 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>pushButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>Manager</receiver>
+   <slot>addmanager()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>330</x>
+     <y>202</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>289</x>
+     <y>214</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>Manager</receiver>
+   <slot>showsell()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>638</x>
+     <y>112</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>715</x>
+     <y>163</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>updatetrain()</slot>
   <slot>updatestation()</slot>
   <slot>updatedeparturetime()</slot>
   <slot>addconductor()</slot>
+  <slot>addmanager()</slot>
+  <slot>showsell()</slot>
  </slots>
 </ui>
