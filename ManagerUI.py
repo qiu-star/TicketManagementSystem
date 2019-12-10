@@ -72,6 +72,7 @@ class Ui_Manager(object):
         self.trainnumbtn.clicked.connect(Manager.updatedeparturetime)
         self.pushButton_4.clicked.connect(Manager.addconductor)
         self.pushButton_5.clicked.connect(Manager.addmanager)
+        self.pushButton_6.clicked.connect(Manager.showsell)
         QtCore.QMetaObject.connectSlotsByName(Manager)
 
     def retranslateUi(self, Manager):

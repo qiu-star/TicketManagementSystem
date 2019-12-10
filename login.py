@@ -8,6 +8,7 @@ from PyQt5.QtWidgets import  QTableWidgetItem
 from RefundUI import Ui_Refund
 from ManagerUI import Ui_Manager
 from DispatchUI import Ui_Dispatch
+from StaticsUI import Ui_Statics
 
 class Login(QtWidgets.QWidget, Ui_Form):
     def __init__(self, conductorui, managerui):
@@ -385,6 +386,25 @@ class Dispatch(QtWidgets.QDialog, Ui_Dispatch):
     def exit(self):
         self.conn.rollback()
         self.close()
+
+class Statics(QtWidgets.QDialog, Ui_Statics):
+    def __init__(self, conn):
+        super(Statics, self).__init__()
+        self.setupUi(self)
+        self.conn = conn
+        self.cur = conn.cursor()
+        self.cur.execute("select * from c_tc;")
+        tmp = self.cur.fetchall()
+        tmp = set(tmp)
+        self.detail.setRowCount(len(tmp))
+        for i, item in enumerate(tmp):
+            for j, jtem in enumerate(item):
+                if jtem == None:
+                    break;
+                newitem = QTableWidgetItem(jtem)
+                self.detail.setItem(i, j, newitem)
+
+
 
 if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)
