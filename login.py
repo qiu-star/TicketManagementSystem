@@ -1,6 +1,6 @@
 import psycopg2
 import sys
-from PyQt5 import QtWidgets, QtGui
+from PyQt5 import QtWidgets, QtGui, QtCore
 from LoginUI import Ui_Form
 from ConductorUI import Ui_Dialog
 from SellUI import Ui_Sell
@@ -193,14 +193,15 @@ class Dispatch(QtWidgets.QDialog, Ui_Dispatch):
     def connectDB(self, conn, type):
         self.conn = conn
         self.cur = conn.cursor()
-
+        self.title.setStyleSheet("font: 14pt \"方正颜宋简体\";")
+        self.title.setGeometry(QtCore.QRect(320, 30, 211, 41))
         if(type == 0):
             hlist = ['车ID', '车型', '座位数']
             self.cur.execute("select * from train;")
             list = self.cur.fetchall()
             self.title.setText('车辆修改')
-
-        #self.setdetail(hlist, list);
+        #elif(type == 1):
+        self.setdetail(hlist, list);
 
     def setdetail(self, hlist, list):
         self.detail.setColumnCount(len(hlist))
@@ -210,8 +211,12 @@ class Dispatch(QtWidgets.QDialog, Ui_Dispatch):
             for j, jtem in enumerate(item):
                 if jtem == None:
                     break
-                newitem = QTableWidgetItem(jtem)
+                newitem = QTableWidgetItem(str(jtem))
                 self.detail.setItem(i, j, newitem)
+
+    def accept(self):
+        print(self.detail.itemSelectionChanged()[0].text())
+        self.close()
 
 if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)

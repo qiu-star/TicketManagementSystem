@@ -61,7 +61,7 @@
     <string notr="true">font: 20pt &quot;方正颜宋简体&quot;;</string>
    </property>
    <property name="text">
-    <string/>
+    <string>车辆修改</string>
    </property>
   </widget>
   <widget class="QPushButton" name="acceptbtn">
@@ -98,5 +98,41 @@
   </widget>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>acceptbtn</sender>
+   <signal>clicked()</signal>
+   <receiver>Dispatch</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>717</x>
+     <y>311</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>794</x>
+     <y>350</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cancelbtn</sender>
+   <signal>clicked()</signal>
+   <receiver>Dispatch</receiver>
+   <slot>exit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>699</x>
+     <y>389</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>782</x>
+     <y>432</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>exit()</slot>
+ </slots>
 </ui>
